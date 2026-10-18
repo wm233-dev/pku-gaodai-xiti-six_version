@@ -1,0 +1,389 @@
+\chapter{欧几里得空间}
+
+\section{习题}
+
+\begin{enumerate}
+  \item 设 $A$ 是一个 $n$ 阶正定矩阵，而
+  \[
+  \alpha=(x_1,x_2,\cdots,x_n),\quad \beta=(y_1,y_2,\cdots,y_n)\text{．}
+  \]
+  在 $\mathbf{R}^n$ 中定义二元实函数
+  \[
+  (\alpha,\beta)=\alpha A\beta^{\mathrm{T}}\text{．}
+  \]
+  \begin{enumerate}
+    \item 证明：在这个定义之下，$\mathbf{R}^n$ 成一欧氏空间；
+  \anssub
+    \item 求单位向量 $\varepsilon_1=(1,0,\cdots,0),\varepsilon_2=(0,1,\cdots,0),\cdots,\varepsilon_n=(0,0,\cdots,1)$ 的度量矩阵；
+  \anssub
+    \item 具体写出这个空间中的柯西-布尼亚科夫斯基不等式．
+  \anssub
+  \end{enumerate}
+
+  \item 在 $\mathbf{R}^4$ 中，求 $\alpha,\beta$ 之间的夹角 $\langle\alpha,\beta\rangle$（内积按通常定义）．设
+  \begin{enumerate}
+    \item $\alpha=(2,1,3,2)$，$\beta=(1,2,-2,1)$；
+  \anssub
+    \item $\alpha=(1,2,2,3)$，$\beta=(3,1,5,1)$；
+  \anssub
+    \item $\alpha=(1,1,1,2)$，$\beta=(3,1,-1,0)$．
+  \anssub
+  \end{enumerate}
+
+  \item $d(\alpha,\beta)=|\alpha-\beta|$ 通常称为 $\alpha$ 与 $\beta$ 的距离．证明：
+  \[
+  d(\alpha,\gamma)\le d(\alpha,\beta)+d(\beta,\gamma).
+  \]
+
+  \ansproof
+  \item 在 $\mathbf{R}^4$ 中求一单位向量与 $(1,1,-1,1)$，$(1,-1,-1,1)$，$(2,1,1,3)$ 正交．
+
+  \anscompute
+  \item 设 $\alpha_1,\alpha_2,\cdots,\alpha_n$ 是欧氏空间 $V$ 的一组基．证明：
+  \begin{enumerate}
+    \item 如果 $\gamma\in V$ 使 $(\gamma,\alpha_i)=0$ $(i=1,2,\cdots,n)$，那么 $\gamma=\mathbf{0}$；
+  \anssub
+    \item 如果 $\gamma_1,\gamma_2\in V$，对任一 $\alpha\in V$，有 $(\gamma_1,\alpha)=(\gamma_2,\alpha)$，那么 $\gamma_1=\gamma_2$．
+  \anssub
+  \end{enumerate}
+
+  \item 设 $\varepsilon_1,\varepsilon_2,\varepsilon_3$ 是三维欧氏空间中一组标准正交基．证明：
+  \[
+  \alpha_1=\frac{1}{3}(2\varepsilon_1+2\varepsilon_2-\varepsilon_3),\quad
+  \alpha_2=\frac{1}{3}(2\varepsilon_1-\varepsilon_2+2\varepsilon_3),\quad
+  \alpha_3=\frac{1}{3}(\varepsilon_1-2\varepsilon_2-2\varepsilon_3)
+  \]
+  也是一组标准正交基．
+
+  \ansproof
+  \item 设 $\varepsilon_1,\varepsilon_2,\varepsilon_3,\varepsilon_4,\varepsilon_5$ 是 $5$ 维欧氏空间 $V$ 的一组标准正交基，$V_1=L(\alpha_1,\alpha_2,\alpha_3)$，其中 $\alpha_1=\varepsilon_1+\varepsilon_5$，$\alpha_2=\varepsilon_1-\varepsilon_2+\varepsilon_4$，$\alpha_3=2\varepsilon_1+\varepsilon_2+\varepsilon_3$，求 $V_1$ 的一组标准正交基．
+
+  \anscompute
+  \item 求齐次线性方程组
+  \[
+  \begin{cases}
+    2x_1+x_2-x_3+x_4-3x_5=0,\\
+    x_1+x_2-x_3+x_5=0
+  \end{cases}
+  \]
+  的解空间（作为 $\mathbf{R}^5$ 的子空间）的一组标准正交基．
+
+  \anscompute
+  \item 在 $\mathbf{R}[x]_4$ 中定义内积为 $(f,g)=\int_{-1}^{1}f(x)g(x)\,\mathrm{d}x$，求 $\mathbf{R}[x]_4$ 的一组标准正交基（由基 $1,x,x^2,x^3$ 出发作正交化）．
+
+  \anscompute
+  \item 设 $V$ 是一 $n$ 维欧氏空间，$\alpha\ne\mathbf{0}$ 是 $V$ 中一固定向量．
+  \begin{enumerate}
+    \item 证明：
+    \[
+    V_1=\{x\mid (x,\alpha)=0,\ x\in V\}
+    \]
+    是 $V$ 的一子空间；
+  \anssub
+    \item 证明：$V_1$ 的维数等于 $n-1$．
+  \anssub
+  \end{enumerate}
+
+  \item
+  \begin{enumerate}
+    \item 证明：欧氏空间中不同基的度量矩阵是合同的；
+  \anssub
+    \item 利用上述结果证明：任一欧氏空间都存在标准正交基．
+  \anssub
+  \end{enumerate}
+
+  \item 设 $\alpha_1,\alpha_2,\cdots,\alpha_m$ 是 $n$ 维欧氏空间 $V$ 中一组向量，而
+  \[
+  \Delta=\begin{pmatrix}
+    (\alpha_1,\alpha_1) & (\alpha_1,\alpha_2) & \cdots & (\alpha_1,\alpha_m) \\
+    (\alpha_2,\alpha_1) & (\alpha_2,\alpha_2) & \cdots & (\alpha_2,\alpha_m) \\
+    \vdots & \vdots & & \vdots \\
+    (\alpha_m,\alpha_1) & (\alpha_m,\alpha_2) & \cdots & (\alpha_m,\alpha_m)
+  \end{pmatrix}
+  \]
+  证明：当且仅当 $|\Delta|\ne 0$，$\alpha_1,\alpha_2,\cdots,\alpha_m$ 线性无关．
+
+  \ansproof
+  \item 证明：上三角形的正交矩阵必为对角矩阵，且主对角线上元素为 $1$ 或 $-1$．
+
+  \ansproof
+  \item
+  \begin{enumerate}
+    \item 设 $A$ 为一个 $n$ 阶实矩阵，且 $|A|\ne 0$．证明 $A$ 可分解成
+    \[
+    A=QT,
+    \]
+    其中 $Q$ 是正交矩阵，$T$ 是上三角形矩阵，即
+    \[
+    T=\begin{pmatrix}
+      t_{11} & t_{12} & \cdots & t_{1n} \\
+      0 & t_{22} & \cdots & t_{2n} \\
+      \vdots & \vdots & & \vdots \\
+      0 & 0 & \cdots & t_{nn}
+    \end{pmatrix}\text{，}
+    \]
+    且 $t_{ii}>0$ $(i=1,2,\cdots,n)$，并证明这个分解是唯一的．
+  \anssub
+    \item 设 $A$ 是 $n$ 阶正定矩阵．证明存在一上三角形矩阵 $T$，使
+    \[
+    A=T^{\mathrm{T}}T.
+    \]
+  \anssub
+  \end{enumerate}
+
+  \item 设 $\eta$ 是 $n$ 维欧氏空间 $V$ 中一单位向量，定义变换 $\mathcal{A}$ 为
+  \[
+  \mathcal{A}\alpha=\alpha-2(\eta,\alpha)\eta.
+  \]
+  证明：
+  \begin{enumerate}
+    \item $\mathcal{A}$ 是正交变换，这样的正交变换称为镜面反射；
+  \anssub
+    \item $\mathcal{A}$ 是第二类的；
+  \anssub
+    \item 如果 $n$ 维欧氏空间中，正交变换 $\mathcal{A}$ 以 $1$ 作为一个特征值，且属于特征值 $1$ 的特征子空间 $V_1$ 的维数为 $n-1$，那么 $\mathcal{A}$ 是镜面反射．
+  \anssub
+  \end{enumerate}
+
+  \item 证明：实反称矩阵的特征值是零或纯虚数．
+
+  \ansproof
+  \item 求正交矩阵 $T$，使 $T^{\mathrm{T}}AT$ 成对角形，其中 $A$ 为
+  \begin{enumerate}
+    \item \[
+    \begin{pmatrix}
+      2 & -2 & 0 \\
+      -2 & 1 & -2 \\
+      0 & -2 & 0
+    \end{pmatrix}\text{；}
+    \]
+  \anssub
+    \item \[
+    \begin{pmatrix}
+      2 & 2 & -2 \\
+      2 & 5 & -4 \\
+      -2 & -4 & 5
+    \end{pmatrix}\text{；}
+    \]
+  \anssub
+    \item \[
+    \begin{pmatrix}
+      0 & 0 & 4 & 1 \\
+      0 & 0 & 1 & 4 \\
+      4 & 1 & 0 & 0 \\
+      1 & 4 & 0 & 0
+    \end{pmatrix}\text{；}
+    \]
+  \anssub
+    \item \[
+    \begin{pmatrix}
+      -1 & -3 & 3 & -3 \\
+      -3 & -1 & -3 & 3 \\
+      3 & -3 & -1 & -3 \\
+      -3 & 3 & -3 & -1
+    \end{pmatrix}\text{；}
+    \]
+  \anssub
+    \item \[
+    \begin{pmatrix}
+      1 & 1 & 1 & 1 \\
+      1 & 1 & 1 & 1 \\
+      1 & 1 & 1 & 1 \\
+      1 & 1 & 1 & 1
+    \end{pmatrix}\text{．}
+    \]
+  \anssub
+  \end{enumerate}
+
+  \item 用正交线性替换化下列二次型为标准形：
+  \begin{enumerate}
+    \item $x_1^2+2x_2^2+3x_3^2-4x_1x_2-4x_2x_3$；
+  \anssub
+    \item $x_1^2-2x_2^2-2x_3^2-4x_1x_2+4x_1x_3+8x_2x_3$；
+  \anssub
+    \item $2x_1x_2+2x_3x_4$；
+  \anssub
+    \item $x_1^2+x_2^2+x_3^2+x_4^2-2x_1x_2+6x_1x_3-4x_1x_4-4x_2x_3+6x_2x_4-2x_3x_4$．
+  \anssub
+  \end{enumerate}
+
+  \item 设 $A$ 是 $n$ 阶实对称矩阵．证明：$A$ 正定的充要条件是 $A$ 的特征多项式的根全大于零．
+
+  \ansproof
+  \item 设 $A$ 是 $n$ 阶实矩阵．证明：存在正交矩阵 $T$，使 $T^{-1}AT$ 为三角形矩阵的充要条件是 $A$ 的特征多项式的根全是实的．
+
+  \ansproof
+  \item 设 $A,B$ 都是实对称矩阵．证明：存在正交矩阵 $T$，使 $T^{-1}AT=B$ 的充要条件是 $A,B$ 的特征多项式的根全部相同．
+
+  \ansproof
+  \item 设 $A$ 是 $n$ 阶实对称矩阵，且 $A^2=A$．证明：存在正交矩阵 $T$，使
+  \[
+  T^{-1}AT=\begin{pmatrix}
+    1 & & & & & & \\
+    & 1 & & & & & \\
+    & & \ddots & & & & \\
+    & & & 1 & & & \\
+    & & & & 0 & & \\
+    & & & & & \ddots & \\
+    & & & & & & 0
+  \end{pmatrix}\text{．}
+  \]
+
+  \ansproof
+  \item 证明：如果 $\mathcal{A}$ 是 $n$ 维欧氏空间的一个正交变换，那么 $\mathcal{A}$ 的不变子空间的正交补也是 $\mathcal{A}$ 的不变子空间．
+
+  \ansproof
+  \item 欧氏空间 $V$ 中的线性变换 $\mathcal{A}$ 称为反称的，如果对任意 $\alpha,\beta\in V$，
+  \[
+  (\mathcal{A}\alpha,\beta)=-(\alpha,\mathcal{A}\beta).
+  \]
+  证明：
+  \begin{enumerate}
+    \item $\mathcal{A}$ 为反称的充要条件是，$\mathcal{A}$ 在一组标准正交基下的矩阵为反称矩阵；
+  \anssub
+    \item 如果 $V_1$ 是反称线性变换 $\mathcal{A}$ 的不变子空间，则 $V_1^{\perp}$ 也是．
+  \anssub
+  \end{enumerate}
+
+  \item 证明：向量 $\beta\in V_1$ 是向量 $\alpha$ 在子空间 $V_1$ 上的内射影的充要条件是，对任意的 $\xi\in V_1$，
+  \[
+  |\alpha-\beta|\le|\alpha-\xi|.
+  \]
+
+  \ansproof
+  \item 设 $V_1,V_2$ 是欧氏空间 $V$ 的两个子空间．证明：
+  \[
+  (V_1+V_2)^{\perp}=V_1^{\perp}\cap V_2^{\perp},\qquad
+  (V_1\cap V_2)^{\perp}=V_1^{\perp}+V_2^{\perp}.
+  \]
+
+  \ansproof
+  \item 求方程组
+  \[
+  \begin{cases}
+    0.39x-1.89y=1,\\
+    0.61x-1.80y=1,\\
+    0.93x-1.68y=1,\\
+    1.35x-1.50y=1
+  \end{cases}
+  \]
+  的最小二乘解．用“到子空间距离最短的线是垂线”的语言表达出上述方程组的最小二乘解的几何意义，由此列出方程并求解．（取三位有效数字计算．）
+  \anscompute
+\end{enumerate}
+
+\section{补充题}
+
+\begin{enumerate}
+  \item 证明：正交矩阵的实特征根为 $\pm 1$．
+
+  \ansproof
+  \item 证明：奇数维欧氏空间中的旋转一定以 $1$ 作为它的一个特征值．
+
+  \ansproof
+  \item 证明：第二类正交变换一定以 $-1$ 作为它的一个特征值．
+
+  \ansproof
+  \item 设 $\mathcal{A}$ 是欧氏空间 $V$ 的一个变换．证明：如果 $\mathcal{A}$ 保持内积不变，即对于 $\alpha,\beta\in V$，$(\mathcal{A}\alpha,\mathcal{A}\beta)=(\alpha,\beta)$，那么它一定是线性的，因而它是正交变换．
+
+  \ansproof
+  \item 设 $\alpha_1,\alpha_2,\cdots,\alpha_m$ 和 $\beta_1,\beta_2,\cdots,\beta_m$ 是 $n$ 维欧氏空间 $V$ 中两个向量组．证明存在一正交变换 $\mathcal{A}$，使
+  \[
+  \mathcal{A}\alpha_i=\beta_i,\quad i=1,2,\cdots,m
+  \]
+  的充要条件为
+  \[
+  (\alpha_i,\alpha_j)=(\beta_i,\beta_j),\quad i,j=1,2,\cdots,m.
+  \]
+
+  \ansproof
+  \item 设 $A$ 是 $n$ 阶实对称矩阵，且 $A^2=E$．证明：存在正交矩阵 $T$，使
+  \[
+  T^{-1}AT=\begin{pmatrix}
+    E_r & O \\
+    O & -E_{n-r}
+  \end{pmatrix}.
+  \]
+
+  \ansproof
+  \item 设 $f(x_1,x_2,\cdots,x_n)=X^{\mathrm{T}}AX$ 是一实二次型，$\lambda_1,\lambda_2,\cdots,\lambda_n$ 是 $A$ 的特征多项式的根，且 $\lambda_1\le\lambda_2\le\cdots\le\lambda_n$．证明：对任一 $X\in\mathbf{R}^n$，有
+  \[
+  \lambda_1X^{\mathrm{T}}X\le X^{\mathrm{T}}AX\le\lambda_nX^{\mathrm{T}}X.
+  \]
+
+  \ansproof
+  \item 设二次型 $f(x_1,x_2,\cdots,x_n)$ 的矩阵为 $A$，$\lambda$ 是 $A$ 的特征多项式的根．证明：存在 $\mathbf{R}^n$ 中的非零向量 $(\bar{x}_1,\bar{x}_2,\cdots,\bar{x}_n)$，使
+  \[
+  f(\bar{x}_1,\bar{x}_2,\cdots,\bar{x}_n)=\lambda(\bar{x}_1^2+\bar{x}_2^2+\cdots+\bar{x}_n^2).
+  \]
+
+  \ansproof
+  \item
+  \begin{enumerate}
+    \item 设 $\alpha,\beta$ 是 $n$ 维欧氏空间中两个不同的单位向量．证明：存在一镜面反射 $\mathcal{A}$，使
+    \[
+    \mathcal{A}(\alpha)=\beta.
+    \]
+  \anssub
+    \item 证明：$n$ 维欧氏空间中任一正交变换都可以表成一系列镜面反射的乘积．
+  \anssub
+  \end{enumerate}
+
+  \item 设 $A,B$ 是两个 $n\times n$ 实对称矩阵，且 $B$ 是正定矩阵．证明：存在一 $n\times n$ 实可逆矩阵 $T$，使 $T^{\mathrm{T}}AT$ 与 $T^{\mathrm{T}}BT$ 同时成对角形．
+
+  \ansproof
+  \item 证明：酉空间中两组标准正交基的过渡矩阵是酉矩阵．
+
+  \ansproof
+  \item 证明：酉矩阵的特征根的模为 $1$．
+
+  \ansproof
+  \item 设 $A$ 是一个 $n$ 阶可逆复矩阵．证明：$A$ 可以分解成
+  \[
+  A=UT,
+  \]
+  其中 $U$ 是酉矩阵，$T$ 是上三角形矩阵，即
+  \[
+  T=\begin{pmatrix}
+    t_{11} & t_{12} & \cdots & t_{1n} \\
+    0 & t_{22} & \cdots & t_{2n} \\
+    \vdots & \vdots & & \vdots \\
+    0 & 0 & \cdots & t_{nn}
+  \end{pmatrix}\text{，}
+  \]
+  其中主对角线上元素 $t_{ii}$ $(i=1,2,\cdots,n)$ 都是正实数，并证明这个分解是唯一的．
+
+  \ansproof
+  \item 证明：埃尔米特矩阵的特征值是实数，并且它的属于不同特征值的特征向量相互正交．
+
+  \ansproof
+  \item 设 $S_n(\mathbf{R})$ 为实数域 $\mathbf{R}$ 上所有 $n$ 阶对称矩阵构成的线性空间，在 $S_n(\mathbf{R})$ 上定义二元实函数
+  \[
+  (A,B)=\operatorname{tr}(AB),\quad A,B\in S_n(\mathbf{R}).
+  \]
+  \begin{enumerate}
+    \item 证明：$(A,B)$ 是 $S_n(\mathbf{R})$ 上的一个内积．
+  \anssub
+    \item 令 $S=\{A\in S_n(\mathbf{R})\mid \operatorname{tr}A=0\}$．证明：$S$ 是 $S_n(\mathbf{R})$ 的一个子空间，并求 $S$ 的维数和基．
+  \anssub
+    \item 求 $S$ 的正交补 $S^{\perp}$．
+  \anssub
+  \end{enumerate}
+
+  \item 设 $A$ 是秩为 $r$ 的 $n$ 阶实方阵．证明：存在欧氏空间 $\mathbf{R}^n$ 中一组正交基 $\alpha_1,\alpha_2,\cdots,\alpha_n$ 及数域 $\mathbf{R}$ 中的 $n$ 个数 $\lambda_1,\lambda_2,\cdots,\lambda_n$，满足
+  \begin{enumerate}
+    \item $A^{\mathrm{T}}A\alpha_i=\lambda_i\alpha_i$，$i=1,2,\cdots,n$，且对于 $i>r$ 有 $\lambda_i=0$；
+  \anssub
+    \item $A\alpha_1,A\alpha_2,\cdots,A\alpha_r$ 彼此正交．
+  \anssub
+  \end{enumerate}
+
+  \item 设 $\alpha_1,\alpha_2,\cdots,\alpha_n$ 为欧氏空间 $V$ 的一组基，$\beta_1,\beta_2,\cdots,\beta_n$ 为 $V$ 的一组标准正交基，矩阵 $M$ 是 $\alpha_1,\alpha_2,\cdots,\alpha_n$ 到 $\beta_1,\beta_2,\cdots,\beta_n$ 的过渡矩阵．证明：$M=RQ$，其中 $Q$ 为 $n$ 阶正交矩阵，$R$ 为 $n$ 阶上三角形矩阵．
+
+  \ansproof
+  \item 设 $V$ 是 $\mathbf{R}$ 上的 $n$ 维欧氏空间．对于 $V$ 上的正交变换 $\tau$，定义 $B(\tau)=\{v\in V\mid \tau(v)=v\}$．对于非零向量 $u\in V$，定义 $\sigma_u\colon V\to V$ 为
+  \[
+  \sigma_u(v)=v-\frac{2(v,u)}{(u,u)}u,\quad v\in V.
+  \]
+  证明：如果一个正交变换 $\tau$ 可以写成 $\tau=\sigma_{u_1}\sigma_{u_2}\cdots\sigma_{u_r}$，那么 $B(\tau)$ 的维数不小于 $n-r$，其中 $u_1,u_2,\cdots,u_r$ 为 $V$ 中的非零向量．
+  \ansproof
+\end{enumerate}

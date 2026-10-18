@@ -1,0 +1,323 @@
+\chapter*{总习题}
+\addcontentsline{toc}{chapter}{总习题}
+\markboth{总习题}{总习题}
+\begin{enumerate}
+  \item 解下列线性方程组：
+  \begin{enumerate}
+    \item
+    \[
+      \begin{cases}
+        x_1+x_2=0,\\
+        x_2+x_3=0,\\
+        \cdots\cdots\cdots\cdots\\
+        x_{n-1}+x_n=0,\\
+        x_1+x_n=0;
+      \end{cases}
+    \]
+  \anssub
+    \item
+    \[
+      \begin{cases}
+        x_1+x_2=c,\\
+        x_2+x_3=c,\\
+        \cdots\cdots\cdots\cdots\\
+        x_{n-1}+x_n=c,\\
+        x_1+x_n=c,
+      \end{cases}
+      \qquad c\neq 0;
+    \]
+  \anssub
+    \item
+    \[
+      \begin{cases}
+        x_1+x_2=c_1,\\
+        x_2+x_3=c_2,\\
+        \cdots\cdots\cdots\cdots\\
+        x_{n-1}+x_n=c_{n-1},\\
+        x_1+x_n=c_n,
+      \end{cases}
+      \qquad c_1,c_2,\cdots,c_n\text{ 不全相等．}
+    \]
+  \anssub
+  \end{enumerate}
+
+  \item 解线性方程组
+  \[
+    \begin{cases}
+      x_1+x_2+\cdots+x_n=1,\\
+      x_2+\cdots+x_n+x_{n+1}=2,\\
+      \cdots\cdots\cdots\cdots\\
+      x_{n+1}+x_{n+2}+\cdots+x_{2n}=n+1.
+    \end{cases}
+  \]
+
+  \anscompute
+  \item 设 $a_1,a_2,\cdots,a_n$ 是 $n$ 个两两不同的数，
+  \[
+    A=\begin{pmatrix}
+      1 & 1 & \cdots & 1\\
+      a_1 & a_2 & \cdots & a_n\\
+      \vdots & \vdots & & \vdots\\
+      a_1^{s-1} & a_2^{s-1} & \cdots & a_n^{s-1}
+    \end{pmatrix}_{s\times n},
+    \quad s\leq n,
+  \]
+  再设 $\alpha=(c_1,c_2,\cdots,c_n)^{\mathrm{T}}$ 是齐次线性方程组
+  \[
+    AX=0
+  \]
+  的一个非零解，求证 $\alpha$ 至少有 $s+1$ 个非零分量．
+
+  \ansproof
+  \item 设 $A,B$ 是同型实矩阵，其中 $A$ 是对称矩阵．如果 $A^{\mathrm{T}}B+B^{\mathrm{T}}A$ 正定，证明：$A$ 是可逆矩阵．
+
+  \ansproof
+  \item 设
+  \[
+    A=\begin{pmatrix}
+      1 & 1 & & & & \\
+       & 2 & 2 & & & \\
+       & & 3 & 3 & & \\
+       & & & \ddots & \ddots & \\
+       & & & & n-1 & n-1\\
+       & & & & & n
+    \end{pmatrix},
+  \]
+  求 $A$ 的若尔当标准形 $J$，并求可逆矩阵 $C$，使 $C^{-1}AC=J$．
+
+  \anscompute
+  \item 证明：设 $\beta_1,\beta_2,\cdots,\beta_m$ 为 $n$ 维线性空间 $V$ 中线性相关的向量组，但其中任意 $m-1$ 个向量皆线性无关．设有 $m$ 个数 $b_1,b_2,\cdots,b_m$，使 $\sum\limits_{j=1}^m b_j\beta_j=0$，则或者 $b_1=b_2=\cdots=b_m=0$，或者 $b_1,b_2,\cdots,b_m$ 皆不为零．在后者的情形，若有另一组数 $c_1,c_2,\cdots,c_m$，使 $\sum\limits_{j=1}^m c_j\beta_j=0$，则 $c_1:b_1=c_2:b_2=\cdots=c_m:b_m$．
+
+  \ansproof
+  \item 设 $\alpha$ 是欧氏空间 $V$ 中的一个非零向量，$\alpha_1,\alpha_2,\cdots,\alpha_p$ 是 $V$ 中 $p$ 个向量，满足
+  \[
+    (\alpha_i,\alpha_j)\leq 0\quad\text{且}\quad (\alpha_i,\alpha)>0,\quad i,j=1,2,\cdots,p,\ i\neq j.
+  \]
+  证明：
+  \begin{enumerate}
+    \item $\alpha_1,\alpha_2,\cdots,\alpha_p$ 线性无关；
+  \anssub
+    \item $n$ 维欧氏空间中最多有 $n+1$ 个向量，使其两两夹角都大于 $\dfrac{\pi}{2}$．
+  \anssub
+  \end{enumerate}
+
+  \item 证明（替换定理）：设向量组 $\alpha_1,\alpha_2,\cdots,\alpha_r$ 线性无关，且可经向量组 $\beta_1,\beta_2,\cdots,\beta_s$ 线性表出，则 $r\leq s$．且在 $\beta_1,\beta_2,\cdots,\beta_s$ 中存在 $r$ 个向量，不妨设就是 $\beta_1,\beta_2,\cdots,\beta_r$，在用 $\alpha_1,\alpha_2,\cdots,\alpha_r$ 替代它们后所得向量组 $\alpha_1,\alpha_2,\cdots,\alpha_r,\beta_{r+1},\cdots,\beta_s$ 与 $\beta_1,\beta_2,\cdots,\beta_s$ 等价．
+
+  \ansproof
+  \item 设 $a_1,a_2,\cdots,a_n$ 是 $n$ 个互不相同的整数．证明：
+  \[
+    f(x)=\prod_{i=1}^n (x-a_i)^2+1
+  \]
+  在 $\mathbb{Q}[x]$ 中不可约．
+
+  \ansproof
+  \item 设 $A,B,C$ 是 $n\times n$ 矩阵，$D=E+BCA$．试证：如果
+  \[
+    C(E-AB)=(E-AB)C=E,
+  \]
+  则
+  \[
+    (E-BA)D=D(E-BA)=E,
+  \]
+  并计算 $E+ADB$．
+
+  \ansproof
+  \item 设数域 $P$ 上 $n\times n$ 矩阵 $F$ 的特征多项式为 $f(x)$，并设 $g(x)=\prod_{i=1}^m (x-a_i)$．证明：
+  \begin{enumerate}
+    \item $|g(F)|=(-1)^{mn}\prod_{i=1}^m f(a_i)$；
+  \anssub
+    \item 对数域 $P$ 上次数不小于 $1$ 的多项式 $G(x)$，有 $(G(x),f(x))=1$ 当且仅当 $|G(F)|\neq 0$．
+  \anssub
+  \end{enumerate}
+
+  \item 证明：设 $A$ 是 $n\times n$ 非零矩阵，则有正整数 $k\leq n$，使 $\text{秩}(A^k)=\text{秩}(A^{k+1})=\text{秩}(A^{k+2})$．
+
+  \ansproof
+  \item $n\times n$ 复矩阵 $A$ 称为幂零的，如果有正整数 $k$，使 $A^k=O$．证明：
+  \begin{enumerate}
+    \item $A$ 是幂零矩阵的充要条件是 $A$ 的所有特征值全为零；
+  \anssub
+    \item $A$ 是幂零矩阵的充要条件是 $\operatorname{tr}A^k=0\ (k=1,2,\cdots)$．
+  \anssub
+  \end{enumerate}
+
+  \item 证明：设 $A,B$ 皆为 $n\times n$ 实对称矩阵，且互相交换，则它们有公共的特征向量作为欧氏空间 $\mathbb{R}^n$ 的标准正交基．
+
+  \ansproof
+  \item 证明：实反称矩阵正交相似于准对角矩阵
+  \[
+    \begin{pmatrix}
+      0 & & & & & & & \\
+       & \ddots & & & & & & \\
+       & & 0 & & & & & \\
+       & & & 0 & b_1 & & & \\
+       & & & -b_1 & 0 & & & \\
+       & & & & & \ddots & & \\
+       & & & & & & 0 & b_s\\
+       & & & & & & -b_s & 0
+    \end{pmatrix},
+  \]
+  其中 $b_i\,(i=1,2,\cdots,s)$ 是实数．
+
+  \ansproof
+  \item 设 $S$ 是非零的实反称矩阵．证明：
+  \begin{enumerate}
+    \item $|E+S|>1$；
+  \anssub
+    \item 设 $A$ 是正定矩阵，则 $|A+S|>|A|$．
+  \anssub
+  \end{enumerate}
+
+  \item 设 $f(x),g(x)$ 是数域 $P$ 上两个不全为零的多项式，令
+  \[
+    S=\{u(x)f(x)+v(x)g(x)\mid u(x),v(x)\in P[x]\}.
+  \]
+  证明：存在 $m(x)\in S$，使
+  \[
+    S=\{h(x)m(x)\mid h(x)\in P[x]\}.
+  \]
+
+  \ansproof
+  \item
+  \begin{enumerate}
+    \item $A$ 是 $n$ 阶可逆矩阵，求二次型
+    \[
+      f=\begin{vmatrix}
+        0 & -X^{\mathrm{T}}\\
+        X & A
+      \end{vmatrix},
+      \quad
+      X=\begin{pmatrix}
+        x_1\\
+        x_2\\
+        \vdots\\
+        x_n
+      \end{pmatrix}
+    \]
+    的矩阵；
+  \anssub
+    \item 证明：当 $A$ 是正定矩阵时，$f$ 是正定二次型；
+  \anssub
+    \item 当 $A$ 是实对称矩阵时，讨论 $A$ 的正、负惯性指数与 $f$ 的正、负惯性指数之间的关系．
+  \anssub
+  \end{enumerate}
+
+  \item 设 $P[x]$ 中多项式 $p_1(x),p_2(x),\cdots,p_s(x)\ (s\geq 2)$ 的次数分别为 $n_1,n_2,\cdots,n_s$．证明：若 $n_1+n_2+\cdots+n_s<\dfrac{s(s-1)}{2}$，则 $p_1(x),p_2(x),\cdots,p_s(x)$ 在线性空间 $P[x]$ 中线性相关．
+
+  \ansproof
+  \item 设 $A$ 是 $n$ 阶实对称矩阵．证明：存在实对称矩阵 $B$，使 $B^2=A$ 的充要条件是 $A$ 为半正定矩阵．
+
+  \ansproof
+  \item 证明：设 $A$ 是非退化实矩阵，则它是一个正交矩阵与一个正定矩阵的乘积．
+
+  \ansproof
+  \item 证明：设 $A$ 是实反称矩阵，则 $(E-A)(E+A)^{-1}$ 是正交矩阵．
+
+  \ansproof
+  \item 设 $a_1,a_2,\cdots,a_n$ 为 $n$ 个彼此不等的实数，$f_1(x),f_2(x),\cdots,f_n(x)$ 是 $n$ 个次数不大于 $n-2$ 的实系数多项式．证明：
+  \[
+    \begin{vmatrix}
+      f_1(a_1) & f_1(a_2) & \cdots & f_1(a_n)\\
+      f_2(a_1) & f_2(a_2) & \cdots & f_2(a_n)\\
+      \vdots & \vdots & & \vdots\\
+      f_n(a_1) & f_n(a_2) & \cdots & f_n(a_n)
+    \end{vmatrix}=0.
+  \]
+
+  \ansproof
+  \item 设 $f(x),g(x),h(x)\in P[x]$，且次数皆大于等于 $1$．证明：$f(g(x))=h(g(x))$ 的充要条件为 $f(x)=h(x)$．
+
+  \ansproof
+  \item 设整系数多项式 $f(x)=a_nx^n+a_{n-1}x^{n-1}+\cdots+a_0$，它没有有理根．又有素数 $p$ 满足
+  \begin{enumerate}
+    \item $p\nmid a_n$；
+  \anssub
+    \item $p\mid a_{n-2},\cdots,p\mid a_0$；
+  \anssub
+    \item $p^2\nmid a_0$．
+  \anssub
+  \end{enumerate}
+  证明：$f(x)$ 在 $\mathbb{Q}[x]$ 中不可约．
+
+  \item
+  \begin{enumerate}
+    \item 设 $f(x)$ 及 $G(x)$ 是 $P[x]$ 中 $m$ 次及不超过 $m+1$ 次多项式，证明：$G(n)=\sum\limits_{k=0}^{n-1}f(k)$ 对所有 $n\geq 1$ 成立的充要条件是 $G(x+1)-G(x)=f(x)$ 且 $G(0)=0$；
+  \anssub
+    \item 证明：对 $P[x]$ 中任何 $m$ 次多项式 $f(x)$，必有 $P[x]$ 中次数不超过 $m+1$ 的多项式 $G(x)$，满足 $G(n)=f(0)+f(1)+\cdots+f(n-1)$ 对任何 $n\geq 1$ 的整数成立；
+  \anssub
+    \item 求 $1^2+2^2+\cdots+n^2$ 及 $1^3+2^3+\cdots+n^3$．
+  \anssub
+  \end{enumerate}
+
+  \item $P$ 是一个数域，$N$ 是 $P[x]$ 中的一个子集，满足
+  \begin{enumerate}
+    \item $f(x),g(x)\in N$，则 $f(x)+g(x)\in N$；
+  \anssub
+    \item 对 $f(x)\in N$ 及任何 $q(x)\in P[x]$，有 $q(x)f(x)\in N$．
+  \anssub
+  \end{enumerate}
+  证明：$N$ 中有 $d(x)$，满足 $N=\{d(x)q(x)\mid q(x)\in P[x]\}$．
+
+  \item $n$ 为正整数，$f(x)\in\mathbb{Q}[x]$，$\partial(f(x))=n$．证明：有不全为零的有理数 $a_0,a_1,\cdots,a_n$，使
+  \[
+    f(x)\Big|\sum_{i=0}^n a_ix^{2^i}.
+  \]
+
+  \ansproof
+  \item $f(x)=ax^4+bx^3+cx^2+dx+e$ 为整系数 $4$ 次多项式，令 $r_1,r_2,r_3,r_4$ 是它的根，已知 $r_1+r_2$ 为有理数，$r_1+r_2\neq r_3+r_4$．证明：$f(x)$ 可以表成两个次数较低的整系数多项式的乘积．
+
+  \ansproof
+  \item $f_1(x),f_2(x),\cdots,f_n(x)$ 是闭区间 $[a,b]$ 上的实函数，且在实数域上是线性无关的．证明：在 $[a,b]$ 上存在数 $a_1,a_2,\cdots,a_n$，使
+  \[
+    \left|(f_i(a_j))\right|\neq 0,\quad i,j=1,2,\cdots,n.
+  \]
+
+  \ansproof
+  \item 令 $S$ 是 $P^{n\times n}$ 中所有形如 $XY-YX$ 的矩阵生成的线性子空间，又设 $H$ 为 $P^{n\times n}$ 中迹为零的矩阵组成的空间．求证 $S=H$，因而 $\text{维}(S)=\text{维}(H)=n^2-1$．
+
+  \ansproof
+  \item 证明：设 $A\in P^{n\times n}$，$\operatorname{tr}A=0$，则有 $P^{n\times n}$ 中可逆矩阵 $T$，使
+  \[
+    T^{-1}AT=
+    \begin{pmatrix}
+      0 & & & & & \\
+       & 0 & & & & *\\
+       & & \ddots & & & \\
+       & * & & & & \\
+       & & & & 0 &
+    \end{pmatrix}.
+  \]
+  % TODO: 原书矩阵为示意图，星号与点的位置据扫描尽量还原
+
+  \ansproof
+  \item 设 $A\in P^{n\times n}$，$\operatorname{tr}A=0$．证明：有 $X,Y\in P^{n\times n}$，使 $XY-YX=A$．
+
+  \ansproof
+  \item 证明：若 $A$ 是 $P^{n\times n}$ 中的一个若尔当块，则与 $A$ 可交换的矩阵一定是 $A$ 的多项式．
+
+  \ansproof
+  \item 设 $A\in P^{n\times n}$，$C(A)=\{B\in P^{n\times n}\mid BA=AB\}$．证明：$\text{维}(C(A))\geq n$．
+
+  \ansproof
+  \item $V$ 是 $n$ 维复线性空间，$\mathcal{A},\mathcal{B}$ 是 $V$ 上线性变换，$\mathcal{A}\mathcal{B}=\mathcal{B}\mathcal{A}$．证明：
+  \begin{enumerate}
+    \item $\mathcal{B}$ 不变 $\mathcal{A}$ 的每一个根子空间；
+  \anssub
+    \item 若 $\mathcal{A}$ 只有一个非常数不变因子，则 $\mathcal{B}$ 是 $\mathcal{A}$ 的多项式；
+  \anssub
+    \item 若与 $\mathcal{A}$ 可交换的线性变换仅有 $\mathcal{A}$ 的多项式，则 $\mathcal{A}$ 只有一个非常数不变因子．
+  \anssub
+  \end{enumerate}
+
+  \item 设 $A,B$ 皆为 $n\times n$ 复矩阵．证明：方程 $AX=XB$ 有非零解的充要条件是 $A,B$ 有公共特征值．
+
+  \ansproof
+  \item 在 $P^{n\times n}$ 中证明：若 $A=BC$，$B=AD$，则有可逆矩阵 $Q$，使 $B=AQ$．
+
+  \ansproof
+  \item 设 $V$ 上线性变换 $\mathcal{A}$ 可以对角化，$V=V_{\lambda_1}\oplus V_{\lambda_2}\oplus\cdots\oplus V_{\lambda_s}$ 是 $\mathcal{A}$ 的特征子空间的直和．$W$ 是 $\mathcal{A}$-子空间，对 $w\in W$，$w=w_1+w_2+\cdots+w_s$，$w_i\in V_{\lambda_i}\ (i=1,2,\cdots,s)$．证明每个 $w_i\in W$．
+
+  \ansproof
+  \item $V$ 是 $n$ 维复线性空间，$\mathcal{A}$ 是 $V$ 上线性变换．证明：$\mathcal{A}$ 的若尔当标准形矩阵中若尔当块的个数等于 $V$ 中 $\mathcal{A}$ 的线性无关的特征向量的最大个数．
+  \ansproof
+\end{enumerate}

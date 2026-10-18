@@ -1,0 +1,271 @@
+\chapter{$\lambda$-矩阵}
+
+\section{习题}
+
+\begin{enumerate}
+  \item 化下列 $\lambda$-矩阵成标准形：
+  \begin{enumerate}
+    \item \[
+    \begin{pmatrix}
+      \lambda^3-\lambda & 2\lambda^2 \\
+      \lambda^2+5\lambda & 3\lambda
+    \end{pmatrix}\text{；}
+    \]
+  \anssub
+    \item \[
+    \begin{pmatrix}
+      1-\lambda & \lambda^2 & \lambda \\
+      \lambda & \lambda & -\lambda \\
+      1+\lambda^2 & \lambda^2 & -\lambda^2
+    \end{pmatrix}\text{；}
+    \]
+  \anssub
+    \item \[
+    \begin{pmatrix}
+      \lambda^2+\lambda & 0 & 0 \\
+      0 & \lambda & 0 \\
+      0 & 0 & (\lambda+1)^2
+    \end{pmatrix}\text{；}
+    \]
+  \anssub
+    \item \[
+    \begin{pmatrix}
+      0 & 0 & 0 & \lambda^2 \\
+      0 & 0 & \lambda^2-\lambda & 0 \\
+      0 & (\lambda-1)^2 & 0 & 0 \\
+      \lambda^2-\lambda & 0 & 0 & 0
+    \end{pmatrix}\text{；}
+    \]
+  \anssub
+    \item \[
+    \begin{pmatrix}
+      3\lambda^2+2\lambda-3 & 2\lambda-1 & \lambda^2+2\lambda-3 \\
+      4\lambda^2+3\lambda-5 & 3\lambda-2 & \lambda^2+3\lambda-4 \\
+      \lambda^2+\lambda-4 & \lambda-2 & \lambda-1
+    \end{pmatrix}\text{；}
+    \]
+  \anssub
+    \item \[
+    \begin{pmatrix}
+      2\lambda & 3 & 0 & 1 & \lambda \\
+      4\lambda & 3\lambda+6 & 0 & \lambda+2 & 2\lambda \\
+      0 & 6\lambda & \lambda & 2\lambda & 0 \\
+      \lambda-1 & 0 & \lambda-1 & 0 & 0 \\
+      3\lambda-3 & 1-\lambda & 2\lambda-2 & 0 & 0
+    \end{pmatrix}\text{．}
+    \]
+  \anssub
+  \end{enumerate}
+
+  \item 求下列 $\lambda$-矩阵的不变因子：
+  \begin{enumerate}
+    \item \[
+    \begin{pmatrix}
+      \lambda-2 & -1 & 0 \\
+      0 & \lambda-2 & -1 \\
+      0 & 0 & \lambda-2
+    \end{pmatrix}\text{；}
+    \]
+  \anssub
+    \item \[
+    \begin{pmatrix}
+      \lambda & -1 & 0 & 0 \\
+      0 & \lambda & -1 & 0 \\
+      0 & 0 & \lambda & -1 \\
+      5 & 4 & 3 & \lambda+2
+    \end{pmatrix}\text{；}
+    \]
+  \anssub
+    \item \[
+    \begin{pmatrix}
+      \lambda+\alpha & \beta & 1 & 0 \\
+      -\beta & \lambda+\alpha & 0 & 1 \\
+      0 & 0 & \lambda+\alpha & \beta \\
+      0 & 0 & -\beta & \lambda+\alpha
+    \end{pmatrix}\text{；}
+    \]
+  \anssub
+    \item \[
+    \begin{pmatrix}
+      0 & 0 & 1 & \lambda+2 \\
+      0 & 1 & \lambda+2 & 0 \\
+      1 & \lambda+2 & 0 & 0 \\
+      \lambda+2 & 0 & 0 & 0
+    \end{pmatrix}\text{；}
+    \]
+  \anssub
+    \item \[
+    \begin{pmatrix}
+      \lambda+1 & 0 & 0 & 0 \\
+      0 & \lambda+2 & 0 & 0 \\
+      0 & 0 & \lambda-1 & 0 \\
+      0 & 0 & 0 & \lambda-2
+    \end{pmatrix}\text{．}
+    \]
+  \anssub
+  \end{enumerate}
+
+  \item 证明：
+  \[
+  \begin{pmatrix}
+    \lambda & 0 & 0 & \cdots & 0 & a_n \\
+    -1 & \lambda & 0 & \cdots & 0 & a_{n-1} \\
+    0 & -1 & \lambda & \cdots & 0 & a_{n-2} \\
+    \vdots & \vdots & \vdots & & \vdots & \vdots \\
+    0 & 0 & 0 & \cdots & \lambda & a_2 \\
+    0 & 0 & 0 & \cdots & -1 & \lambda+a_1
+  \end{pmatrix}
+  \]
+  的不变因子是 $\underbrace{1,1,\cdots,1}_{n-1\text{个}},f(\lambda)$，其中 $f(\lambda)=\lambda^n+a_1\lambda^{n-1}+\cdots+a_{n-1}\lambda+a_n$．
+
+  \ansproof
+  \item 设 $A$ 是数域 $P$ 上一个 $n\times n$ 矩阵．证明：$A$ 与 $A^{\mathrm{T}}$ 相似．
+
+  \ansproof
+  \item 设
+  \[
+  A=\begin{pmatrix}
+    \lambda & 0 & 0 \\
+    1 & \lambda & 0 \\
+    0 & 1 & \lambda
+  \end{pmatrix},
+  \]
+  求 $A^k$．
+
+  \anscompute
+  \item 求下列复矩阵的若尔当标准形：
+  \begin{enumerate}
+    \item \[
+    \begin{pmatrix}
+      1 & 2 & 0 \\
+      0 & 2 & 0 \\
+      -2 & -2 & -1
+    \end{pmatrix}\text{；}
+    \]
+  \anssub
+    \item \[
+    \begin{pmatrix}
+      13 & 16 & 16 \\
+      -5 & -7 & -6 \\
+      -6 & -8 & -7
+    \end{pmatrix}\text{；}
+    \]
+  \anssub
+    \item \[
+    \begin{pmatrix}
+      3 & 0 & 8 \\
+      3 & -1 & 6 \\
+      -2 & 0 & -5
+    \end{pmatrix}\text{；}
+    \]
+  \anssub
+    \item \[
+    \begin{pmatrix}
+      4 & 5 & -2 \\
+      -2 & -2 & 1 \\
+      -1 & -1 & 1
+    \end{pmatrix}\text{；}
+    \]
+  \anssub
+    \item \[
+    \begin{pmatrix}
+      3 & 7 & -3 \\
+      -2 & -5 & 2 \\
+      -4 & -10 & 3
+    \end{pmatrix}\text{；}
+    \]
+  \anssub
+    \item \[
+    \begin{pmatrix}
+      1 & -1 & 2 \\
+      3 & -3 & 6 \\
+      2 & -2 & 4
+    \end{pmatrix}\text{；}
+    \]
+  \anssub
+    \item \[
+    \begin{pmatrix}
+      1 & 1 & -1 \\
+      -3 & -3 & 3 \\
+      -2 & -2 & 2
+    \end{pmatrix}\text{；}
+    \]
+  \anssub
+    \item \[
+    \begin{pmatrix}
+      -4 & 2 & 10 \\
+      -4 & 3 & 7 \\
+      -3 & 1 & 7
+    \end{pmatrix}\text{；}
+    \]
+  \anssub
+    \item \[
+    \begin{pmatrix}
+      0 & 3 & 3 \\
+      -1 & 8 & 6 \\
+      2 & -14 & -10
+    \end{pmatrix}\text{；}
+    \]
+  \anssub
+    \item \[
+    \begin{pmatrix}
+      8 & 30 & -14 \\
+      -6 & -19 & 9 \\
+      -6 & -23 & 11
+    \end{pmatrix}\text{；}
+    \]
+  \anssub
+    \item \[
+    \begin{pmatrix}
+      3 & 1 & 0 & 0 \\
+      -4 & -1 & 0 & 0 \\
+      7 & 1 & 2 & 1 \\
+      -7 & -6 & -1 & 0
+    \end{pmatrix}\text{；}
+    \]
+  \anssub
+    \item \[
+    \begin{pmatrix}
+      1 & 2 & 3 & 4 \\
+      0 & 1 & 2 & 3 \\
+      0 & 0 & 1 & 2 \\
+      0 & 0 & 0 & 1
+    \end{pmatrix}\text{；}
+    \]
+  \anssub
+    \item \[
+    \begin{pmatrix}
+      1 & -3 & 0 & 3 \\
+      -2 & 6 & 0 & 13 \\
+      0 & -3 & 1 & 3 \\
+      -1 & 2 & 0 & 8
+    \end{pmatrix}\text{；}
+    \]
+  \anssub
+    \item \[
+    \begin{pmatrix}
+      0 & 1 & 0 & \cdots & 0 & 0 \\
+      0 & 0 & 1 & \cdots & 0 & 0 \\
+      \vdots & \vdots & \vdots & & \vdots & \vdots \\
+      0 & 0 & 0 & \cdots & 0 & 1 \\
+      1 & 0 & 0 & \cdots & 0 & 0
+    \end{pmatrix}\text{．}
+    \]
+  \anssub
+  \end{enumerate}
+
+  \item 把习题 6 中各矩阵看成有理数域上矩阵，试写出它们的有理标准形．
+  \anscompute
+\end{enumerate}
+
+\section{补充题}
+
+\begin{enumerate}
+  \item 设 $\mathcal{A}$ 是 $n$ 维线性空间 $V$ 上的线性变换．证明：
+  \begin{enumerate}
+    \item 若 $\mathcal{A}$ 在 $V$ 的一组基下的矩阵 $A$ 是多项式 $d(\lambda)$ 的友矩阵，则 $\mathcal{A}$ 的最小多项式是 $d(\lambda)$；
+  \anssub
+    \item 设 $\mathcal{A}$ 的最高次的不变因子是 $d(\lambda)$，则 $\mathcal{A}$ 的最小多项式是 $d(\lambda)$．
+  \anssub
+  \end{enumerate}
+\end{enumerate}

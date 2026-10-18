@@ -1,0 +1,412 @@
+\chapter{线性变换}
+
+\section{习题}
+
+\begin{enumerate}
+  \item 判别下面所定义的变换，哪些是线性的，哪些不是：
+  \begin{enumerate}
+    \item 在线性空间 $V$ 中，$\mathcal{A}\xi=\xi+\alpha$，其中 $\alpha\in V$ 是一固定的向量；
+  \anssub
+    \item 在线性空间 $V$ 中，$\mathcal{A}\xi=\alpha$，其中 $\alpha\in V$ 是一固定的向量；
+  \anssub
+    \item 在 $P^3$ 中，$\mathcal{A}(x_1,x_2,x_3)=(x_1^2,x_2+x_3,x_3^2)$；
+  \anssub
+    \item 在 $P^3$ 中，$\mathcal{A}(x_1,x_2,x_3)=(2x_1-x_2,x_2+x_3,x_1)$；
+  \anssub
+    \item 在 $P[x]$ 中，$\mathcal{A}f(x)=f(x+1)$；
+  \anssub
+    \item 在 $P[x]$ 中，$\mathcal{A}f(x)=f(x_0)$，其中 $x_0\in P$ 是一固定的数；
+  \anssub
+    \item 把复数域看作复数域上的线性空间，$\mathcal{A}\xi=\overline{\xi}$；
+  \anssub
+    \item 在 $P^{n\times n}$ 中，$\mathcal{A}(X)=BXC$，其中 $B,C\in P^{n\times n}$ 是两个固定的矩阵．
+  \anssub
+  \end{enumerate}
+  \item 在几何空间中，取正交坐标系 $Oxyz$．以 $\mathcal{A}$ 表示将空间绕 $x$ 轴由 $Oy$ 向 $Oz$ 方向旋转 $90^\circ$ 的变换，以 $\mathcal{B}$ 表示绕 $y$ 轴由 $Oz$ 向 $Ox$ 方向旋转 $90^\circ$ 的变换，以 $\mathcal{C}$ 表示绕 $z$ 轴由 $Ox$ 向 $Oy$ 方向旋转 $90^\circ$ 的变换．证明：
+  \[
+    \mathcal{A}^4=\mathcal{B}^4=\mathcal{C}^4=\mathcal{E},\qquad
+    \mathcal{A}\mathcal{B}\ne\mathcal{B}\mathcal{A},\quad\text{但}\quad
+    \mathcal{A}^2\mathcal{B}^2=\mathcal{B}^2\mathcal{A}^2.
+  \]
+  并检验 $(\mathcal{A}\mathcal{B})^2=\mathcal{A}^2\mathcal{B}^2$ 是否成立．
+  \ansproof
+  \item 在 $P[x]$ 中，$\mathcal{A}f(x)=f'(x)$，$\mathcal{B}f(x)=xf(x)$，证明：
+  \[
+    \mathcal{A}\mathcal{B}-\mathcal{B}\mathcal{A}=\mathcal{E}.
+  \]
+  \ansproof
+  \item 设 $\mathcal{A},\mathcal{B}$ 是线性变换．如果 $\mathcal{A}\mathcal{B}-\mathcal{B}\mathcal{A}=\mathcal{E}$，证明：
+  \[
+    \mathcal{A}^k\mathcal{B}-\mathcal{B}\mathcal{A}^k=k\mathcal{A}^{k-1},\qquad k>1.
+  \]
+  \ansproof
+  \item 证明：可逆变换是双射．
+  \ansproof
+  \item 设 $\varepsilon_1,\varepsilon_2,\cdots,\varepsilon_n$ 是线性空间 $V$ 的一组基，$\mathcal{A}$ 是 $V$ 上的线性变换．证明：$\mathcal{A}$ 可逆当且仅当 $\mathcal{A}\varepsilon_1,\mathcal{A}\varepsilon_2,\cdots,\mathcal{A}\varepsilon_n$ 线性无关．
+  \ansproof
+  \item 求下列线性变换在所指定基下的矩阵：
+  \begin{enumerate}
+    \item 第 1 题 4) 中变换 $\mathcal{A}$ 在基 $\varepsilon_1=(1,0,0)$，$\varepsilon_2=(0,1,0)$，$\varepsilon_3=(0,0,1)$ 下的矩阵；
+  \anssub
+    \item $[O;\varepsilon_1,\varepsilon_2]$ 是平面上一直角坐标系，$\mathcal{A}$ 是平面上的向量对第一和第三象限角的平分线的垂直投影，$\mathcal{B}$ 是平面上的向量对 $\varepsilon_2$ 的垂直投影，求 $\mathcal{A}$，$\mathcal{B}$，$\mathcal{A}\mathcal{B}$ 在基 $\varepsilon_1,\varepsilon_2$ 下的矩阵；
+  \anssub
+    \item 在空间 $P[x]_n$ 中，设变换 $\mathcal{A}$ 为 $f(x)\to f(x+1)-f(x)$，求 $\mathcal{A}$ 在基
+    \[
+      \varepsilon_0=1,\qquad
+      \varepsilon_i=\frac{x(x-1)\cdots(x-i+1)}{i!},\quad i=1,2,\cdots,n-1
+    \]
+    下的矩阵；
+  \anssub
+    \item 6 个函数
+    \[
+      \varepsilon_1=\mathrm{e}^{ax}\cos bx,\quad
+      \varepsilon_2=\mathrm{e}^{ax}\sin bx,\quad
+      \varepsilon_3=x\mathrm{e}^{ax}\cos bx,
+    \]
+    \[
+      \varepsilon_4=x\mathrm{e}^{ax}\sin bx,\quad
+      \varepsilon_5=\frac{1}{2}x^2\mathrm{e}^{ax}\cos bx,\quad
+      \varepsilon_6=\frac{1}{2}x^2\mathrm{e}^{ax}\sin bx
+    \]
+    的所有实系数线性组合构成实数域上一个 6 维线性空间，求微分变换 $\mathcal{D}$ 在基 $\varepsilon_i(i=1,2,\cdots,6)$ 下的矩阵；
+  \anssub
+    \item 已知 $P^3$ 中线性变换 $\mathcal{A}$ 在基 $\eta_1=(-1,1,1)$，$\eta_2=(1,0,-1)$，$\eta_3=(0,1,1)$ 下的矩阵是
+    \[
+      \begin{pmatrix}
+        1&0&1\\
+        1&1&0\\
+        -1&2&1
+      \end{pmatrix},
+    \]
+    求 $\mathcal{A}$ 在基 $\varepsilon_1=(1,0,0)$，$\varepsilon_2=(0,1,0)$，$\varepsilon_3=(0,0,1)$ 下的矩阵；
+  \anssub
+    \item 在 $P^3$ 中，$\mathcal{A}$ 定义如下：
+    \[
+      \begin{cases}
+        \mathcal{A}\eta_1=(-5,0,3),\\
+        \mathcal{A}\eta_2=(0,-1,6),\\
+        \mathcal{A}\eta_3=(-5,-1,9),
+      \end{cases}
+      \quad\text{其中}\quad
+      \begin{cases}
+        \eta_1=(-1,0,2),\\
+        \eta_2=(0,1,1),\\
+        \eta_3=(3,-1,0),
+      \end{cases}
+    \]
+    求 $\mathcal{A}$ 在基 $\varepsilon_1=(1,0,0)$，$\varepsilon_2=(0,1,0)$，$\varepsilon_3=(0,0,1)$ 下的矩阵；
+  \anssub
+    \item 同上，求 $\mathcal{A}$ 在 $\eta_1,\eta_2,\eta_3$ 下的矩阵．
+  \anssub
+  \end{enumerate}
+  \item 在 $P^{2\times 2}$ 中定义线性变换
+  \[
+    \mathcal{A}_1(X)=\begin{pmatrix}a&b\\c&d\end{pmatrix}X,\qquad
+    \mathcal{A}_2(X)=X\begin{pmatrix}a&b\\c&d\end{pmatrix},\qquad
+    \mathcal{A}_3(X)=\begin{pmatrix}a&b\\c&d\end{pmatrix}X\begin{pmatrix}a&b\\c&d\end{pmatrix},
+  \]
+  求 $\mathcal{A}_1,\mathcal{A}_2,\mathcal{A}_3$ 在基 $E_{11},E_{12},E_{21},E_{22}$ 下的矩阵．
+  \anscompute
+  \item 设三维线性空间 $V$ 上的线性变换 $\mathcal{A}$ 在基 $\varepsilon_1,\varepsilon_2,\varepsilon_3$ 下的矩阵为
+  \[
+    A=\begin{pmatrix}
+      a_{11}&a_{12}&a_{13}\\
+      a_{21}&a_{22}&a_{23}\\
+      a_{31}&a_{32}&a_{33}
+    \end{pmatrix}.
+  \]
+  \begin{enumerate}
+    \item 求 $\mathcal{A}$ 在基 $\varepsilon_3,\varepsilon_2,\varepsilon_1$ 下的矩阵；
+  \anssub
+    \item 求 $\mathcal{A}$ 在基 $\varepsilon_1,k\varepsilon_2,\varepsilon_3$ 下的矩阵，其中 $k\in P$ 且 $k\ne 0$；
+  \anssub
+    \item 求 $\mathcal{A}$ 在基 $\varepsilon_1+\varepsilon_2,\varepsilon_2,\varepsilon_3$ 下的矩阵．
+  \anssub
+  \end{enumerate}
+  \item 设 $\mathcal{A}$ 是线性空间 $V$ 上的线性变换．如果 $\mathcal{A}^{k-1}\xi\ne 0$，但 $\mathcal{A}^k\xi=0$，求证 $\xi,\mathcal{A}\xi,\cdots,\mathcal{A}^{k-1}\xi$ $(k>0)$ 线性无关．
+  \ansproof
+  \item 在 $n$ 维线性空间中，设有线性变换 $\mathcal{A}$ 与向量 $\xi$，使得 $\mathcal{A}^{n-1}\xi\ne 0$，但 $\mathcal{A}^n\xi=0$，求证 $\mathcal{A}$ 在某组基下的矩阵是
+  \[
+    \begin{pmatrix}
+      0&0&\cdots&0&0\\
+      1&0&\cdots&0&0\\
+      0&1&\cdots&0&0\\
+      \vdots&\vdots&&\vdots&\vdots\\
+      0&0&\cdots&1&0
+    \end{pmatrix}.
+  \]
+  \ansproof
+  \item 设 $V$ 是数域 $P$ 上 $n$ 维线性空间．证明：$V$ 上的与全体线性变换可交换的线性变换是数乘变换．
+  \ansproof
+  \item $\mathcal{A}$ 是数域 $P$ 上 $n$ 维线性空间 $V$ 的一个线性变换．证明：如果 $\mathcal{A}$ 在任意一组基下的矩阵都相同，那么 $\mathcal{A}$ 是数乘变换．
+  \ansproof
+  \item 设 $\varepsilon_1,\varepsilon_2,\varepsilon_3,\varepsilon_4$ 是 4 维线性空间 $V$ 的一组基，已知线性变换 $\mathcal{A}$ 在这组基下的矩阵为
+  \[
+    \begin{pmatrix}
+      1&0&2&1\\
+      -1&2&1&3\\
+      1&2&5&5\\
+      2&-2&1&-2
+    \end{pmatrix}.
+  \]
+  \begin{enumerate}
+    \item 求 $\mathcal{A}$ 在基 $\eta_1=\varepsilon_1-2\varepsilon_2+\varepsilon_4$，$\eta_2=3\varepsilon_2-\varepsilon_3-\varepsilon_4$，$\eta_3=\varepsilon_3+\varepsilon_4$，$\eta_4=2\varepsilon_4$ 下的矩阵；
+  \anssub
+    \item 求 $\mathcal{A}$ 的核与值域；
+  \anssub
+    \item 在 $\mathcal{A}$ 的核中选一组基，把它扩充成 $V$ 的一组基，并求 $\mathcal{A}$ 在这组基下的矩阵；
+  \anssub
+    \item 在 $\mathcal{A}$ 的值域中选一组基，把它扩充成 $V$ 的一组基，并求 $\mathcal{A}$ 在这组基下的矩阵．
+  \anssub
+  \end{enumerate}
+  \item 给定 $P^3$ 的两组基
+  \[
+    \varepsilon_1=(1,0,1),\quad \varepsilon_2=(2,1,0),\quad \varepsilon_3=(1,1,1),
+  \]
+  \[
+    \eta_1=(1,2,-1),\quad \eta_2=(2,2,-1),\quad \eta_3=(2,-1,-1).
+  \]
+  定义线性变换 $\mathcal{A}$：
+  \[
+    \mathcal{A}\varepsilon_i=\eta_i,\qquad i=1,2,3.
+  \]
+  \begin{enumerate}
+    \item 写出由基 $\varepsilon_1,\varepsilon_2,\varepsilon_3$ 到基 $\eta_1,\eta_2,\eta_3$ 的过渡矩阵；
+  \anssub
+    \item 写出 $\mathcal{A}$ 在基 $\varepsilon_1,\varepsilon_2,\varepsilon_3$ 下的矩阵；
+  \anssub
+    \item 写出 $\mathcal{A}$ 在基 $\eta_1,\eta_2,\eta_3$ 下的矩阵．
+  \anssub
+  \end{enumerate}
+  \item 证明：
+  \[
+    \begin{pmatrix}
+      \lambda_1&&&\\
+      &\lambda_2&&\\
+      &&\ddots&\\
+      &&&\lambda_n
+    \end{pmatrix}
+    \quad\text{与}\quad
+    \begin{pmatrix}
+      \lambda_{i_1}&&&\\
+      &\lambda_{i_2}&&\\
+      &&\ddots&\\
+      &&&\lambda_{i_n}
+    \end{pmatrix}
+  \]
+  相似，其中 $i_1i_2\cdots i_n$ 是 $1,2,\cdots,n$ 的一个排列．
+  \ansproof
+  \item 如果 $A$ 可逆，证明：$AB$ 与 $BA$ 相似．
+  \ansproof
+  \item 如果 $A$ 与 $B$ 相似，$C$ 与 $D$ 相似，证明：
+  \[
+    \begin{pmatrix}A&O\\O&C\end{pmatrix}
+    \quad\text{与}\quad
+    \begin{pmatrix}B&O\\O&D\end{pmatrix}
+  \]
+  相似．
+  \ansproof
+  \item 求复数域上线性空间 $V$ 的线性变换 $\mathcal{A}$ 的特征值与特征向量，已知 $\mathcal{A}$ 在一组基下的矩阵为：
+  \begin{enumerate}
+    \item $A=\begin{pmatrix}3&4\\5&2\end{pmatrix}$；
+  \anssub
+    \item $A=\begin{pmatrix}0&a\\-a&0\end{pmatrix}$；
+  \anssub
+    \item $A=\begin{pmatrix}1&1&1&1\\1&1&-1&-1\\1&-1&1&-1\\1&-1&-1&1\end{pmatrix}$；
+  \anssub
+    \item $A=\begin{pmatrix}5&6&-3\\-1&0&1\\1&2&-1\end{pmatrix}$；
+  \anssub
+    \item $A=\begin{pmatrix}0&0&1\\0&1&0\\1&0&0\end{pmatrix}$；
+  \anssub
+    \item $A=\begin{pmatrix}0&2&1\\-2&0&3\\-1&-3&0\end{pmatrix}$；
+  \anssub
+    \item $A=\begin{pmatrix}3&1&0\\-4&-1&0\\4&-8&-2\end{pmatrix}$．
+  \anssub
+  \end{enumerate}
+  \item 在上题中哪些变换的矩阵可以在适当的基下化成对角形？在可以化成对角形的情况，写出相应的基变换的过渡矩阵 $T$，并验算 $T^{-1}AT$．
+  \anscompute
+  \item 在 $P[x]_n(n>1)$ 中，求微分变换 $\mathcal{D}$ 的特征多项式，并证明 $\mathcal{D}$ 在任何一组基下的矩阵都不可能是对角矩阵．
+  \ansproof
+  \item 设
+  \[
+    A=\begin{pmatrix}
+      1&4&2\\
+      0&-3&4\\
+      0&4&3
+    \end{pmatrix},
+  \]
+  求 $A^k$．
+  \anscompute
+  \item 设 $\varepsilon_1,\varepsilon_2,\varepsilon_3,\varepsilon_4$ 是 4 维线性空间 $V$ 的一组基，线性变换 $\mathcal{A}$ 在这组基下的矩阵为
+  \[
+    A=\begin{pmatrix}
+      5&-2&-4&3\\
+      3&-1&-3&2\\
+      -3&\frac{1}{2}&\frac{9}{2}&-\frac{5}{2}\\
+      -10&3&11&-7
+    \end{pmatrix}.
+  \]
+  \begin{enumerate}
+    \item 求 $\mathcal{A}$ 在基
+    \[
+      \begin{gathered}
+        \eta_1=\varepsilon_1+2\varepsilon_2+\varepsilon_3+\varepsilon_4,\\
+        \eta_2=2\varepsilon_1+3\varepsilon_2+\varepsilon_3,\\
+        \eta_3=\varepsilon_3,\\
+        \eta_4=\varepsilon_4
+      \end{gathered}
+    \]
+    下的矩阵；
+  \anssub
+    \item 求 $\mathcal{A}$ 的特征值与特征向量；
+  \anssub
+    \item 求一可逆矩阵 $T$，使 $T^{-1}AT$ 成对角形．
+  \anssub
+  \end{enumerate}
+  \item
+  \begin{enumerate}
+    \item 设 $\lambda_1,\lambda_2$ 是线性变换 $\mathcal{A}$ 的两个不同特征值，$\varepsilon_1,\varepsilon_2$ 是分别属于 $\lambda_1,\lambda_2$ 的特征向量，证明：$\varepsilon_1+\varepsilon_2$ 不是 $\mathcal{A}$ 的特征向量；
+  \anssub
+    \item 证明：如果线性空间 $V$ 的线性变换 $\mathcal{A}$ 以 $V$ 中每个非零向量作为它的特征向量，那么 $\mathcal{A}$ 是数乘变换．
+  \anssub
+  \end{enumerate}
+  \item 设 $V$ 是复数域上的 $n$ 维线性空间，$\mathcal{A},\mathcal{B}$ 是 $V$ 上的线性变换，且 $\mathcal{A}\mathcal{B}=\mathcal{B}\mathcal{A}$．证明：
+  \begin{enumerate}
+    \item 如果 $\lambda_0$ 是 $\mathcal{A}$ 的一特征值，那么 $V_{\lambda_0}$ 是 $\mathcal{B}$ 的不变子空间；
+  \anssub
+    \item $\mathcal{A},\mathcal{B}$ 至少有一个公共的特征向量．
+  \anssub
+  \end{enumerate}
+  \item 设 $V$ 是复数域上的 $n$ 维线性空间，而线性变换 $\mathcal{A}$ 在基 $\varepsilon_1,\varepsilon_2,\cdots,\varepsilon_n$ 下的矩阵是一若尔当块．证明：
+  \begin{enumerate}
+    \item $V$ 中包含 $\varepsilon_1$ 的 $\mathcal{A}$-子空间只有 $V$ 自身；
+  \anssub
+    \item $V$ 中任一非零 $\mathcal{A}$-子空间都包含 $\varepsilon_n$；
+  \anssub
+    \item $V$ 不能分解成两个非平凡的 $\mathcal{A}$-子空间的直和．
+  \anssub
+  \end{enumerate}
+  \item 求下列矩阵的最小多项式：
+  \begin{enumerate}
+    \item $\begin{pmatrix}0&0&1\\0&1&0\\1&0&0\end{pmatrix}$；
+  \anssub
+    \item $\begin{pmatrix}3&-1&-3&1\\-1&3&1&-3\\3&-1&-3&1\\-1&3&1&-3\end{pmatrix}$．
+  \anssub
+  \end{enumerate}
+\end{enumerate}
+
+\section{补充题}
+
+\begin{enumerate}
+  \item 设 $\mathcal{A},\mathcal{B}$ 是线性变换，$\mathcal{A}^2=\mathcal{A}$，$\mathcal{B}^2=\mathcal{B}$．证明：
+  \begin{enumerate}
+    \item 如果 $(\mathcal{A}+\mathcal{B})^2=\mathcal{A}+\mathcal{B}$，那么 $\mathcal{A}\mathcal{B}=0$；
+  \anssub
+    \item 如果 $\mathcal{A}\mathcal{B}=\mathcal{B}\mathcal{A}$，那么 $(\mathcal{A}+\mathcal{B}-\mathcal{A}\mathcal{B})^2=\mathcal{A}+\mathcal{B}-\mathcal{A}\mathcal{B}$．
+  \anssub
+  \end{enumerate}
+  \item 设 $V$ 是数域 $P$ 上 $n$ 维线性空间．证明：由 $V$ 的全体线性变换组成的线性空间是 $n^2$ 维的．
+  \ansproof
+  \item 设 $\mathcal{A}$ 是数域 $P$ 上 $n$ 维线性空间 $V$ 的一个线性变换．证明：
+  \begin{enumerate}
+    \item 在 $P[x]$ 中有一次数不大于 $n^2$ 的多项式 $f(x)$，使 $f(\mathcal{A})=0$；
+  \anssub
+    \item 如果 $f(\mathcal{A})=0$，$g(\mathcal{A})=0$，那么 $d(\mathcal{A})=0$，这里 $d(x)$ 是 $f(x)$ 与 $g(x)$ 的最大公因式；
+  \anssub
+    \item $\mathcal{A}$ 可逆的充要条件是，有一常数项不为零的多项式 $f(x)$ 使 $f(\mathcal{A})=0$．
+  \anssub
+  \end{enumerate}
+  \item 设 $\mathcal{A}$ 是线性空间 $V$ 上的可逆线性变换．
+  \begin{enumerate}
+    \item 证明：$\mathcal{A}$ 的特征值一定不为 0；
+  \anssub
+    \item 证明：如果 $\lambda$ 是 $\mathcal{A}$ 的特征值，那么 $\frac{1}{\lambda}$ 是 $\mathcal{A}^{-1}$ 的特征值．
+  \anssub
+  \end{enumerate}
+  \item 设 $\mathcal{A}$ 是线性空间 $V$ 上的线性变换．证明：$\mathcal{A}$ 的行列式为零的充要条件是 $\mathcal{A}$ 以零作为一个特征值．
+  \ansproof
+  \item 设 $A$ 是一 $n$ 阶下三角形矩阵．证明：
+  \begin{enumerate}
+    \item 如果 $a_{ii}\ne a_{jj}(i\ne j,\ i,j=1,2,\cdots,n)$，那么 $A$ 相似于一对角矩阵；
+  \anssub
+    \item 如果 $a_{11}=a_{22}=\cdots=a_{nn}$，而至少有一 $a_{i_0j_0}\ne 0(i_0>j_0)$，那么 $A$ 不与对角矩阵相似．
+  \anssub
+  \end{enumerate}
+  \item 证明：对任一 $n\times n$ 复矩阵 $A$，存在可逆矩阵 $T$，使 $T^{-1}AT$ 是上三角形矩阵．
+  \ansproof
+  \item 证明：如果 $\mathcal{A}_1,\mathcal{A}_2,\cdots,\mathcal{A}_s$ 是线性空间 $V$ 上的 $s$ 个两两不同的线性变换，那么在 $V$ 中必存在向量 $\alpha$，使 $\mathcal{A}_1\alpha,\mathcal{A}_2\alpha,\cdots,\mathcal{A}_s\alpha$ 也两两不同．
+  \ansproof
+  \item 设 $\mathcal{A}$ 是有限维线性空间 $V$ 上的线性变换，$W$ 是 $V$ 的子空间，$\mathcal{A}W$ 表示由 $W$ 中向量的像组成的子空间．证明：
+  \[
+    \text{维}(\mathcal{A}W)+\text{维}(\mathcal{A}^{-1}(0)\cap W)=\text{维}(W).
+  \]
+  \ansproof
+  \item 设 $\mathcal{A},\mathcal{B}$ 是 $n$ 维线性空间 $V$ 上的两个线性变换．证明：
+  \[
+    \mathcal{A}\mathcal{B}\text{ 的秩}\ge \mathcal{A}\text{ 的秩}+\mathcal{B}\text{ 的秩}-n.
+  \]
+  \ansproof
+  \item 设 $\mathcal{A}^2=\mathcal{A}$，$\mathcal{B}^2=\mathcal{B}$．证明：
+  \begin{enumerate}
+    \item $\mathcal{A}$ 与 $\mathcal{B}$ 有相同值域的充要条件是 $\mathcal{A}\mathcal{B}=\mathcal{B}$，$\mathcal{B}\mathcal{A}=\mathcal{A}$；
+  \anssub
+    \item $\mathcal{A}$ 与 $\mathcal{B}$ 有相同的核的充要条件是 $\mathcal{A}\mathcal{B}=\mathcal{A}$，$\mathcal{B}\mathcal{A}=\mathcal{B}$．
+  \anssub
+  \end{enumerate}
+  \item 设 $A=\begin{pmatrix}a&b\\c&d\end{pmatrix}$．在 $P^{2\times 2}$ 上定义变换 $\mathcal{A}$：$\mathcal{A}X=AX-XA$，$X\in P^{2\times 2}$．
+  \begin{enumerate}
+    \item 证明：$\mathcal{A}$ 是 $P^{2\times 2}$ 上的线性变换；
+  \anssub
+    \item 在 $P^{2\times 2}$ 中取一组基
+    \[
+      \alpha_1=\begin{pmatrix}1&0\\0&0\end{pmatrix},\quad
+      \alpha_2=\begin{pmatrix}0&1\\0&0\end{pmatrix},\quad
+      \alpha_3=\begin{pmatrix}0&0\\1&0\end{pmatrix},\quad
+      \alpha_4=\begin{pmatrix}0&0\\0&1\end{pmatrix},
+    \]
+    求 $\mathcal{A}$ 在这组基下的矩阵．
+  \anssub
+  \end{enumerate}
+  \item 设 $V$ 是多项式环 $P[x,y]$ 中 $q$ 次齐次多项式生成的子空间，$v_i=x^iy^{q-i}$，$0\le i\le q$，则 $v_0,v_1,\cdots,v_q$ 构成了 $V$ 的一组基．设 $M=\begin{pmatrix}a&b\\c&d\end{pmatrix}$ 为可逆矩阵．定义 $V$ 上的映射 $\mathcal{M}$，$\mathcal{M}$ 把多项式 $f(x,y)$ 映为 $f(ax+cy,bx+dy)$．
+  \begin{enumerate}
+    \item 证明：$\mathcal{M}$ 为 $V$ 上的线性映射；
+  \anssub
+    \item 求当 $M=\begin{pmatrix}1&t\\0&1\end{pmatrix}$，$\begin{pmatrix}1&0\\t&1\end{pmatrix}$ 时，$\mathcal{M}$ 在 $v_0,v_1,\cdots,v_q$ 下的矩阵．
+  \anssub
+  \end{enumerate}
+  \item 设 $\mathcal{A}$ 和 $\mathcal{B}$ 是数域 $P$ 上 $n$ 维线性空间 $V$ 上的线性变换，$\mathcal{C}=\mathcal{A}\mathcal{B}-\mathcal{B}\mathcal{A}$．证明：如果 $\mathcal{A},\mathcal{B},\mathcal{C}$ 都是幂零线性变换，且 $\mathcal{C}$ 与 $\mathcal{A}$ 和 $\mathcal{B}$ 都交换，那么 $\mathcal{A}+\mathcal{B}$ 也是幂零线性变换．
+  \ansproof
+  \item 设 $S$ 为数域 $P$ 上线性空间 $V$ 上某些线性变换的集合．线性空间 $V$ 的一个子空间 $U$ 称为 $S$-子空间，如果 $U$ 是 $S$ 中任意线性变换的不变子空间．设 $\alpha_1,\alpha_2,\alpha_3,\alpha_4$ 是 4 维线性空间 $V$ 的一组基，$S=\{\mathcal{A}_1,\mathcal{A}_2\}$．线性变换 $\mathcal{A}_1,\mathcal{A}_2$ 在 $\alpha_1,\alpha_2,\alpha_3,\alpha_4$ 下的矩阵分别为
+  \[
+    \begin{pmatrix}
+      0&0&1&0\\
+      1&0&0&0\\
+      0&1&0&0\\
+      0&0&0&1
+    \end{pmatrix},
+    \qquad
+    \begin{pmatrix}
+      0&1&0&0\\
+      0&0&1&0\\
+      1&0&0&0\\
+      0&0&0&1
+    \end{pmatrix}.
+  \]
+  试确定线性空间 $V$ 最多可以写成几个 $S$-子空间的直和．
+  \ansgeneral
+  \item 设 $\alpha_1,\alpha_2,\cdots,\alpha_n$ 为数域 $P$ 上线性空间 $V$ 的一组基．设 $S$ 为所有在基 $\alpha_1,\alpha_2,\cdots,\alpha_n$ 下矩阵为上三角形矩阵的 $V$ 上线性变换的集合．证明：在 $V$ 中存在 $S$ 的一维不变子空间．
+  \ansproof
+  \item 设 $U,V,W$ 是域 $P$ 上维数分别为 $r,s,t$ 的线性空间．设 $\operatorname{Hom}_P(U,V)$ 为从线性空间 $U$ 到 $V$ 的线性映射构成的线性空间．% TODO: 原书模糊（Hom 下标印作小写 p，按数域 P 转写）
+  \begin{enumerate}
+    \item 证明：线性空间 $\operatorname{Hom}_P(U,V)$ 的维数为 $rs$；
+  \anssub
+    \item 证明：对 $\varphi\in\operatorname{Hom}_P(U,V)$，存在唯一的线性映射
+    \[
+      \varphi^*:\operatorname{Hom}_P(W,U)\to\operatorname{Hom}_P(W,V),
+    \]
+    使得 $\varphi^*(f)(\alpha)=(\varphi\circ f)(\alpha)$，其中 $\alpha\in W$，$f\in\operatorname{Hom}_P(W,U)$．
+  \anssub
+  \end{enumerate}
+  \item 设 $V$ 是数域 $P$ 上的有限维线性空间，试确定在任何一组基下矩阵都相同的 $V$ 上的线性变换．
+  \ansgeneral
+\end{enumerate}

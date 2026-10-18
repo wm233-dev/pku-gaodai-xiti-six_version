@@ -1,0 +1,312 @@
+\chapter{多项式}
+\section{习题}
+\begin{enumerate}
+  \item 用 $g(x)$ 除 $f(x)$，求商 $q(x)$ 与余式 $r(x)$：
+  \begin{enumerate}
+    \item $f(x)=x^3-3x^2-x-1$，$g(x)=3x^2-2x+1$；
+  \anssub
+    \item $f(x)=x^4-2x+5$，$g(x)=x^2-x+2$．
+  \anssub
+  \end{enumerate}
+  \item $m,p,q$ 适合什么条件时，有
+  \begin{enumerate}
+    \item $x^2+mx-1\mid x^3+px+q$；
+  \anssub
+    \item $x^2+mx+1\mid x^4+px^2+q$．
+  \anssub
+  \end{enumerate}
+  \item 求 $g(x)$ 除 $f(x)$ 的商 $q(x)$ 与余式 $r(x)$：
+  \begin{enumerate}
+    \item $f(x)=2x^5-5x^3-8x$，$g(x)=x+3$；
+  \anssub
+    \item $f(x)=x^3-x^2-x$，$g(x)=x-1+2\mathrm{i}$．
+  \anssub
+  \end{enumerate}
+  \item 把 $f(x)$ 表成 $x-x_0$ 的方幂和，即表成 $c_0+c_1(x-x_0)+c_2(x-x_0)^2+\cdots$ 的形式：
+  \begin{enumerate}
+    \item $f(x)=x^5$，$x_0=1$；
+  \anssub
+    \item $f(x)=x^4-2x^2+3$，$x_0=-2$；
+  \anssub
+    \item $f(x)=x^4+2\mathrm{i}x^3-(1+\mathrm{i})x^2-3x+7+\mathrm{i}$，$x_0=-\mathrm{i}$．
+  \anssub
+  \end{enumerate}
+  \item 求 $f(x)$ 与 $g(x)$ 的最大公因式：
+  \begin{enumerate}
+    \item $f(x)=x^4+x^3-3x^2-4x-1$，$g(x)=x^3+x^2-x-1$；
+  \anssub
+    \item $f(x)=x^4-4x^3+1$，$g(x)=x^3-3x^2+1$；
+  \anssub
+    \item $f(x)=x^4-10x^2+1$，$g(x)=x^4-4\sqrt{2}x^3+6x^2+4\sqrt{2}x+1$．
+  \anssub
+  \end{enumerate}
+  \item 求 $u(x),v(x)$，使 $u(x)f(x)+v(x)g(x)=(f(x),g(x))$：
+  \begin{enumerate}
+    \item $f(x)=x^4+2x^3-x^2-4x-2$，$g(x)=x^4+x^3-x^2-2x-2$；
+  \anssub
+    \item $f(x)=4x^4-2x^3-16x^2+5x+9$，$g(x)=2x^3-x^2-5x+4$；
+  \anssub
+    \item $f(x)=x^4-x^3-4x^2+4x+1$，$g(x)=x^2-x-1$．
+  \anssub
+  \end{enumerate}
+  \item 设 $f(x)=x^3+(1+t)x^2+2x+2u$，$g(x)=x^3+tx^2+u$ 的最大公因式是一个二次多项式，求 $t,u$ 的值．
+  \anscompute
+  \item 证明：如果 $d(x)\mid f(x)$，$d(x)\mid g(x)$，且 $d(x)$ 为 $f(x)$ 与 $g(x)$ 的一个组合，那么 $d(x)$ 是 $f(x)$ 与 $g(x)$ 的一个最大公因式．
+  \ansproof
+  \item 证明：$(f(x)h(x),g(x)h(x))=(f(x),g(x))h(x)$（$h(x)$ 的首项系数为 $1$）．
+  \ansproof
+  \item 如果 $f(x),g(x)$ 不全为零，证明：
+  \[
+    \left(\frac{f(x)}{(f(x),g(x))},\frac{g(x)}{(f(x),g(x))}\right)=1.
+  \]
+  \ansproof
+  \item 证明：如果 $f(x),g(x)$ 不全为零，且
+  \[
+    u(x)f(x)+v(x)g(x)=(f(x),g(x)),
+  \]
+  那么 $(u(x),v(x))=1$．
+  \ansproof
+  \item 证明：如果 $(f(x),g(x))=1$，$(f(x),h(x))=1$，那么
+  \[
+    (f(x),g(x)h(x))=1.
+  \]
+  \ansproof
+  \item 设 $f_1(x),f_2(x),\cdots,f_m(x),g_1(x),g_2(x),\cdots,g_n(x)$ 都是多项式，而且
+  \[
+    (f_i(x),g_j(x))=1,\quad i=1,2,\cdots,m;\ j=1,2,\cdots,n.
+  \]
+  求证：$(f_1(x)f_2(x)\cdots f_m(x),g_1(x)g_2(x)\cdots g_n(x))=1$．
+  \ansproof
+  \item 证明：如果 $(f(x),g(x))=1$，那么 $(f(x)g(x),f(x)+g(x))=1$．
+  \ansproof
+  \item 求多项式
+  \[
+    f(x)=x^3+2x^2+2x+1,\quad g(x)=x^4+x^3+2x^2+x+1
+  \]
+  的公共根．
+  \anscompute
+  \item 判别下列多项式有无重因式：
+  \begin{enumerate}
+    \item $f(x)=x^5-5x^4+7x^3-2x^2+4x-8$；
+  \anssub
+    \item $f(x)=x^4+4x^2-4x-3$．
+  \anssub
+  \end{enumerate}
+  \item 求 $t$ 值使 $f(x)=x^3-3x^2+tx-1$ 有重根．
+  \anscompute
+  \item 求多项式 $x^3+px+q$ 有重根的条件．
+  \anscompute
+  \item 如果 $(x-1)^2\mid Ax^4+Bx^2+1$，求 $A,B$．
+  \anscompute
+  \item 证明：$1+x+\dfrac{x^2}{2!}+\cdots+\dfrac{x^n}{n!}$ 不能有重根．
+  \ansproof
+  \item 如果 $a$ 是 $f^{(m)}(x)$ 的一个 $k$ 重根，证明：$a$ 是
+  \[
+    g(x)=\frac{x-a}{2}\left[f'(x)+f'(a)\right]-f(x)+f(a)
+  \]
+  的一个 $k+3$ 重根．
+  \ansproof
+  \item 证明：$x_0$ 是 $f(x)$ 的 $k$ 重根的充要条件是 $f(x_0)=f'(x_0)=\cdots=f^{(k-1)}(x_0)=0$，而 $f^{(k)}(x_0)\neq 0$．
+  \ansproof
+  \item 举例说明断语“如果 $\alpha$ 是 $f'(x)$ 的 $m$ 重根，那么 $\alpha$ 是 $f(x)$ 的 $m+1$ 重根”是不对的．
+  \ansgeneral
+  \item 证明：如果 $(x-1)\mid f(x^n)$，那么 $(x^n-1)\mid f(x^n)$．
+  \ansproof
+  \item 证明：如果 $(x^2+x+1)\mid f_1(x^3)+xf_2(x^3)$，那么
+  \[
+    (x-1)\mid f_1(x),\quad (x-1)\mid f_2(x).
+  \]
+  \ansproof
+  \item 将多项式 $x^n-1$ 在复数范围内和在实数范围内因式分解．
+  \anscompute
+  \item 求下列多项式的有理根：
+  \begin{enumerate}
+    \item $x^3-6x^2+15x-14$；
+  \anssub
+    \item $4x^4-7x^2-5x-1$；
+  \anssub
+    \item $x^5+x^4-6x^3-14x^2-11x-3$．
+  \anssub
+  \end{enumerate}
+  \item 判断下列多项式在有理数域上是否可约：
+  \begin{enumerate}
+    \item $x^2+1$；
+  \anssub
+    \item $x^4-8x^3+12x^2+2$；
+  \anssub
+    \item $x^6+x^3+1$；
+  \anssub
+    \item $x^p+px+1$，$p$ 为奇素数；
+  \anssub
+    \item $x^4+4kx+1$，$k$ 为整数．
+  \anssub
+  \end{enumerate}
+  \item 用初等对称多项式表出下列对称多项式：
+  \begin{enumerate}
+    \item $x_1^2x_2+x_1x_2^2+x_1^2x_3+x_1x_3^2+x_2^2x_3+x_2x_3^2$；
+  \anssub
+    \item $(x_1+x_2)(x_1+x_3)(x_2+x_3)$；
+  \anssub
+    \item $(x_1-x_2)^2(x_1-x_3)^2(x_2-x_3)^2$；
+  \anssub
+    \item $x_1^2x_2^2+x_1^2x_3^2+x_1^2x_4^2+x_2^2x_3^2+x_2^2x_4^2+x_3^2x_4^2$；
+  \anssub
+    \item $(x_1x_2+x_3)(x_2x_3+x_1)(x_3x_1+x_2)$；
+  \anssub
+    \item $(x_1+x_2+x_1x_2)(x_2+x_3+x_2x_3)(x_1+x_3+x_1x_3)$．
+  \anssub
+  \end{enumerate}
+  \item 用初等对称多项式表出下列 $n$ 元对称多项式：
+  \begin{enumerate}
+    \item $\sum x_1^4$；
+  \anssub
+    \item $\sum x_1^2x_2x_3$；
+  \anssub
+    \item $\sum x_1^2x_2^2$；
+  \anssub
+    \item $\sum x_1^2x_2^2x_3x_4$．
+  \anssub
+  \end{enumerate}
+  （$\sum ax_1^{k_1}x_2^{k_2}\cdots x_n^{k_n}$ 表示所有由 $ax_1^{k_1}x_2^{k_2}\cdots x_n^{k_n}$ 经过对换得到的项的和．）
+  \item 设 $\alpha_1,\alpha_2,\alpha_3$ 是方程 $5x^3-6x^2+7x-8=0$ 的三个根，计算
+  \[
+    (\alpha_1^2+\alpha_1\alpha_2+\alpha_2^2)(\alpha_2^2+\alpha_2\alpha_3+\alpha_3^2)(\alpha_1^2+\alpha_1\alpha_3+\alpha_3^2).
+  \]
+  \anscompute
+  \item 证明：三次方程 $x^3+a_1x^2+a_2x+a_3=0$ 的三个根成等差数列的充要条件为
+  \[
+    2a_1^3-9a_1a_2+27a_3=0.
+  \]
+  \ansproof
+\end{enumerate}
+\section{补充题}
+\begin{enumerate}
+  \item 设 $f_1(x)=af(x)+bg(x)$，$g_1(x)=cf(x)+dg(x)$，且 $ad-bc\neq 0$．证明：$(f(x),g(x))=(f_1(x),g_1(x))$．
+  \ansproof
+  \item 证明：只要
+  \[
+    \frac{f(x)}{(f(x),g(x))},\quad \frac{g(x)}{(f(x),g(x))}
+  \]
+  的次数都大于零，就可以适当选择适合等式
+  \[
+    u(x)f(x)+v(x)g(x)=(f(x),g(x))
+  \]
+  的 $u(x)$ 与 $v(x)$，使
+  \[
+    \partial(u(x))<\partial\left(\frac{g(x)}{(f(x),g(x))}\right),\quad
+    \partial(v(x))<\partial\left(\frac{f(x)}{(f(x),g(x))}\right).
+  \]
+  \ansproof
+  \item 证明：如果 $f(x)$ 与 $g(x)$ 互素，那么 $f(x^m)$ 与 $g(x^m)$（$m\geq 1$）也互素．
+  \ansproof
+  \item 证明：如果 $f_1(x),\allowbreak f_2(x),\allowbreak\cdots,f_{s-1}(x)$ 的最大公因式存在，那么 $f_1(x),\allowbreak f_2(x),\allowbreak\cdots,f_{s-1}(x),\allowbreak f_s(x)$ 的最大公因式也存在，且当 $f_1(x),\allowbreak f_2(x),\allowbreak\cdots,f_s(x)$ 全不为零时有
+  \[
+    (f_1(x),f_2(x),\cdots,f_{s-1}(x),f_s(x))=((f_1(x),f_2(x),\cdots,f_{s-1}(x)),f_s(x)).
+  \]
+  再利用上式证明，存在多项式 $u_1(x),u_2(x),\cdots,u_s(x)$ 使
+  \[
+    u_1(x)f_1(x)+u_2(x)f_2(x)+\cdots+u_s(x)f_s(x)=(f_1(x),f_2(x),\cdots,f_s(x)).
+  \]
+  \ansproof
+  \item 多项式 $m(x)$ 称为多项式 $f(x),g(x)$ 的一个最小公倍式，如果
+  \begin{enumerate}
+    \item $f(x)\mid m(x)$，$g(x)\mid m(x)$；
+  \anssub
+    \item $f(x),g(x)$ 的任意一个公倍式都是 $m(x)$ 的倍式．
+  \anssub
+  \end{enumerate}
+  我们以 $[f(x),g(x)]$ 表示首项系数是 $1$ 的那个最小公倍式．证明：如果 $f(x),g(x)$ 的首项系数都是 $1$，那么
+  \[
+    [f(x),g(x)]=\frac{f(x)g(x)}{(f(x),g(x))}.
+  \]
+  \item 证明定理 $5$ 的逆：设 $p(x)$ 是次数大于零的多项式，如果对于任何多项式 $f(x),g(x)$，由 $p(x)\mid f(x)g(x)$ 可以推出 $p(x)\mid f(x)$ 或者 $p(x)\mid g(x)$，那么 $p(x)$ 是不可约多项式．
+  \ansproof
+  \item 证明：次数大于 $0$ 且首项系数为 $1$ 的多项式 $f(x)$ 是一个不可约多项式的方幂的充要条件是，对任意的多项式 $g(x)$ 必有 $(f(x),g(x))=1$，或者对某一正整数 $m$，$f(x)\mid g^m(x)$．
+  \ansproof
+  \item 证明：次数大于 $0$ 且首项系数为 $1$ 的多项式 $f(x)$ 是一个不可约多项式的方幂的充要条件是，对任意的多项式 $g(x),h(x)$，由 $f(x)\mid g(x)h(x)$ 可以推出 $f(x)\mid g(x)$，或者对某一正整数 $m$，$f(x)\mid h^m(x)$．
+  \ansproof
+  \item 证明：$x^n+ax^{n-m}+b$ 不能有不为零的重数大于 $2$ 的根．
+  \ansproof
+  \item 证明：如果 $f(x)\mid f(x^n)$，那么 $f(x)$ 的根只能是零或单位根．
+  \ansproof
+  \item 对于多项式 $g(x)$ 可以递归地定义 $g^{(k)}(x)=(g^{(k-1)}(x))'$，其中 $g^{(1)}(x)=g'(x)$．
+  \begin{enumerate}
+    \item 设 $f(x)=x^n+a_{n-1}x^{n-1}+\cdots+a_1x+a_0$．证明：$f'(x)\mid f(x)$ 的充要条件是存在数域中的数 $a$，使得 $f(x)=(x-a)^n$．
+  \anssub
+    \item 证明：满足
+    \[
+      \frac{g(x)}{g^{(k)}(x)}=c_kx^k+c_{k-1}x^{k-1}+\cdots+c_1x+c_0
+    \]
+    的首一多项式 $g(x)$ 唯一．
+  \anssub
+  \end{enumerate}
+  \item 设 $a_1,a_2,\cdots,a_n$ 是 $n$ 个不同的数，而
+  \[
+    F(x)=(x-a_1)(x-a_2)\cdots(x-a_n).
+  \]
+  证明：
+  \begin{enumerate}
+    \item $\displaystyle\sum_{i=1}^n\frac{F(x)}{(x-a_i)F'(a_i)}=1$；
+  \anssub
+    \item 任意多项式 $f(x)$ 用 $F(x)$ 除所得的余式为
+    \[
+      \sum_{i=1}^n\frac{f(a_i)F(x)}{(x-a_i)F'(a_i)}.
+    \]
+  \anssub
+  \end{enumerate}
+  \item $a_1,a_2,\cdots,a_n$ 与 $F(x)$ 同上题，$b_1,b_2,\cdots,b_n$ 是任意 $n$ 个数，显然
+  \[
+    L(x)=\sum_{i=1}^n\frac{b_iF(x)}{(x-a_i)F'(a_i)}
+  \]
+  适合条件
+  \[
+    L(a_i)=b_i,\quad i=1,2,\cdots,n.
+  \]
+  这称为拉格朗日（Lagrange）插值公式．利用上面的公式求：
+  \begin{enumerate}
+    \item 一个次数小于 $4$ 的多项式 $f(x)$，它适合条件 $f(2)=3$，$f(3)=-1$，$f(4)=0$，$f(5)=2$；
+  \anssub
+    \item 一个二次多项式 $f(x)$，它在 $x=0,\dfrac{\pi}{2},\pi$ 处与函数 $\sin x$ 有相同的值；
+  \anssub
+    \item 一个次数尽可能低的多项式 $f(x)$，使 $f(0)=1$，$f(1)=2$，$f(2)=5$，$f(3)=10$．
+  \anssub
+  \end{enumerate}
+  \item 设 $f(x)$ 是一个整系数多项式．试证：如果 $f(0)$ 与 $f(1)$ 都是奇数，那么 $f(x)$ 不能有整数根．
+  \ansproof
+  \item 设 $x_1,x_2,\cdots,x_n$ 是方程 $x^n+a_1x^{n-1}+\cdots+a_n=0$ 的根．证明：$x_2,x_3,\cdots,x_n$ 的对称多项式可以表成 $x_1$ 与 $a_1,a_2,\cdots,a_{n-1}$ 的多项式．
+  \ansproof
+  \item $f(x)=(x-x_1)(x-x_2)\cdots(x-x_n)=x^n-\sigma_1x^{n-1}+\cdots+(-1)^n\sigma_n$，令 $s_k=x_1^k+x_2^k+\cdots+x_n^k$（$k=0,1,2,\cdots$）．
+  \begin{enumerate}
+    \item 证明：
+    \[
+      x^{k+1}f'(x)=(s_0x^k+s_1x^{k-1}+\cdots+s_{k-1}x+s_k)f(x)+g(x),
+    \]
+    其中 $\partial(g(x))<n$ 或 $g(x)=0$．
+  \anssub
+    \item 由上式证明牛顿（Newton）公式
+    \[
+      s_k-\sigma_1s_{k-1}+\sigma_2s_{k-2}+\cdots+(-1)^{k-1}\sigma_{k-1}s_1+(-1)^kk\sigma_k=0,\quad 1\leq k\leq n;
+    \]
+    \[
+      s_k-\sigma_1s_{k-1}+\cdots+(-1)^n\sigma_ns_{k-n}=0,\quad k>n.
+    \]
+  \anssub
+  \end{enumerate}
+  \item 根据牛顿公式用初等对称多项式表示 $s_2,s_3,s_4,s_5,s_6$ 的表达式，给出用初等对称多项式表示 $s_k$ 的公式．
+  \ansgeneral
+  \item 证明：如果对于某一个 $6$ 次方程有 $s_1=s_3=0$，那么
+  \[
+    \frac{s_7}{7}=\frac{s_5}{5}\cdot\frac{s_2}{2}.
+  \]
+  \ansproof
+  \item 求一个 $n$ 次方程使
+  \[
+    s_1=s_2=\cdots=s_{n-1}=0.
+  \]
+  \anscompute
+  \item 求一个 $n$ 次方程使
+  \[
+    s_2=s_3=\cdots=s_n=0.
+  \]
+  \anscompute
+\end{enumerate}

@@ -1,0 +1,63 @@
+\documentclass[UTF8,zihao=-4,a4paper,oneside]{ctexbook}
+\usepackage[margin=2.4cm,top=2.6cm,bottom=2.5cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black,urlcolor=black}
+\linespread{1.15}
+
+\setlist[enumerate,1]{label=\arabic*.,leftmargin=2.4em,itemsep=0.45em,topsep=0.5em,parsep=0.2em}
+\setlist[enumerate,2]{label=\arabic*),leftmargin=2.2em,itemsep=0.12em,topsep=0.15em,parsep=0.1em}
+\setlist[enumerate,3]{label=\arabic*),leftmargin=2.0em,itemsep=0.1em,topsep=0.1em,parsep=0.1em}
+
+% —— 答题空位长度（可自行调整）——
+\newlength{\ansprooflen}\setlength{\ansprooflen}{5.5cm}
+\newlength{\anscomputelen}\setlength{\anscomputelen}{3.5cm}
+\newlength{\ansgenerallen}\setlength{\ansgenerallen}{4.5cm}
+\newlength{\anssublen}\setlength{\anssublen}{2.2cm}
+\newcommand{\ansgap}[1]{\par\nobreak\vspace*{#1}}
+\newcommand{\ansproof}{\ansgap{\ansprooflen}}
+\newcommand{\anscompute}{\ansgap{\anscomputelen}}
+\newcommand{\ansgeneral}{\ansgap{\ansgenerallen}}
+\newcommand{\anssub}{\ansgap{\anssublen}}
+\raggedbottom
+% 尽量避免题目自身跨页断裂（孤行/寡行、公式前后不出页）
+\widowpenalty=10000
+\clubpenalty=10000
+\predisplaypenalty=10000
+\postdisplaypenalty=10000
+
+\begin{document}
+
+\begin{titlepage}
+\centering
+\vspace*{5cm}
+{\heiti\Huge 高等代数（第六版）\par}
+\vspace{14pt}
+{\heiti\LARGE 习题汇编\par}
+\vspace{2.2cm}
+{\large 北京大学数学系前代数小组\quad 编\par}
+\vspace{8pt}
+{\large 王萼芳\quad 石生明\quad 王立中\quad 修订\par}
+\vfill
+{\small\kaishu 说明：本文件只收录原书各章末的“习题”“补充题”以及书末“总习题”的题目，不包含解答；题号、小题号均按原书保留。每道题（含小题）后留有答题空位，空位长度可在源文件顶部调整。仅供个人学习使用。\par}
+\vspace{1cm}
+\end{titlepage}
+
+{\linespread{0.92}\selectfont
+\tableofcontents}
+\clearpage
+
+\input{chapters/ch01}
+\input{chapters/ch02}
+\input{chapters/ch03}
+\input{chapters/ch04}
+\input{chapters/ch05}
+\input{chapters/ch06}
+\input{chapters/ch07}
+\input{chapters/ch08}
+\input{chapters/ch09}
+\input{chapters/ch10}
+\input{chapters/zong}
+
+\end{document}

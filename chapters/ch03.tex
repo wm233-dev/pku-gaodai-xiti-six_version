@@ -1,0 +1,492 @@
+\chapter{线性方程组}
+
+\section{习题}
+
+\begin{enumerate}
+  \item 用消元法解下列线性方程组：
+  \begin{enumerate}
+    \item \[
+      \begin{cases}
+        x_1+3x_2+5x_3-4x_4=1,\\
+        x_1+3x_2+2x_3-2x_4+x_5=-1,\\
+        x_1-2x_2+x_3-x_4-x_5=3,\\
+        x_1-4x_2+x_3+x_4-x_5=3,\\
+        x_1+2x_2+x_3-x_4+x_5=-1;
+      \end{cases}
+    \]
+  \anssub
+    \item \[
+      \begin{cases}
+        x_1+2x_2-3x_4+2x_5=1,\\
+        x_1-x_2-3x_3+x_4-3x_5=2,\\
+        2x_1-3x_2+4x_3-5x_4+2x_5=7,\\
+        9x_1-9x_2+6x_3-16x_4+2x_5=25;
+      \end{cases}
+    \]
+  \anssub
+    \item \[
+      \begin{cases}
+        x_1-2x_2+3x_3-4x_4=4,\\
+        x_2-x_3+x_4=-3,\\
+        x_1+3x_2+x_4=1,\\
+        -7x_2+3x_3+x_4=-3;
+      \end{cases}
+    \]
+  \anssub
+    \item \[
+      \begin{cases}
+        3x_1+4x_2-5x_3+7x_4=0,\\
+        2x_1-3x_2+3x_3-2x_4=0,\\
+        4x_1+11x_2-13x_3+16x_4=0,\\
+        7x_1-2x_2+x_3+3x_4=0;
+      \end{cases}
+    \]
+  \anssub
+    \item \[
+      \begin{cases}
+        2x_1+x_2-x_3+x_4=1,\\
+        3x_1-2x_2+2x_3-3x_4=2,\\
+        5x_1+x_2-x_3+2x_4=-1,\\
+        2x_1-x_2+x_3-3x_4=4;
+      \end{cases}
+    \]
+  \anssub
+    \item \[
+      \begin{cases}
+        x_1+2x_2+3x_3-x_4=1,\\
+        3x_1+2x_2+x_3-x_4=1,\\
+        2x_1+3x_2+x_3+x_4=1,\\
+        2x_1+2x_2+2x_3-x_4=1,\\
+        5x_1+5x_2+2x_3=2.
+      \end{cases}
+    \]
+  \anssub
+  \end{enumerate}
+  \item 把向量 $\beta$ 表成向量 $\alpha_1,\alpha_2,\alpha_3,\alpha_4$ 的线性组合：
+  \begin{enumerate}
+    \item $\beta=(1,2,1,1)$，$\alpha_1=(1,1,1,1)$，$\alpha_2=(1,1,-1,-1)$，$\alpha_3=(1,-1,1,-1)$，$\alpha_4=(1,-1,-1,1)$；
+  \anssub
+    \item $\beta=(0,0,0,1)$，$\alpha_1=(1,1,0,1)$，$\alpha_2=(2,1,3,1)$，$\alpha_3=(1,1,0,0)$，$\alpha_4=(0,1,-1,-1)$．
+  \anssub
+  \end{enumerate}
+  \item 证明：如果向量组 $\alpha_1,\alpha_2,\cdots,\alpha_r$ 线性无关，而 $\alpha_1,\alpha_2,\cdots,\alpha_r,\beta$ 线性相关，则向量 $\beta$ 可以经 $\alpha_1,\alpha_2,\cdots,\alpha_r$ 线性表出．
+  \ansproof
+  \item 设 $\alpha_i=(a_{i1},a_{i2},\cdots,a_{in})$ $(i=1,2,\cdots,n)$．证明：如果行列式 $|a_{ij}|\ne 0$，那么 $\alpha_1,\alpha_2,\cdots,\alpha_n$ 线性无关．
+  \ansproof
+  \item 设 $t_1,t_2,\cdots,t_r$ 是互不相同的数，$r\le n$．证明：$\alpha_i=(1,t_i,t_i^2,\cdots,t_i^{n-1})$ $(i=1,2,\cdots,r)$ 是线性无关的．
+  \ansproof
+  \item 设 $\alpha_1,\alpha_2,\alpha_3$ 线性无关．证明：$\alpha_1+\alpha_2,\alpha_2+\alpha_3,\alpha_3+\alpha_1$ 也线性无关．
+  \ansproof
+  \item 已知 $\alpha_1,\alpha_2,\cdots,\alpha_s$ 的秩为 $r$．证明：$\alpha_1,\alpha_2,\cdots,\alpha_s$ 中任意 $r$ 个线性无关的向量都构成它的一个极大线性无关组．
+  \ansproof
+  \item 设 $\alpha_1,\alpha_2,\cdots,\alpha_s$ 的秩为 $r$，$\alpha_{i_1},\alpha_{i_2},\cdots,\alpha_{i_r}$ 是 $\alpha_1,\alpha_2,\cdots,\alpha_s$ 中的 $r$ 个向量，使得 $\alpha_1,\alpha_2,\cdots,\alpha_s$ 中每个向量都可以经它们线性表出．证明：$\alpha_{i_1},\alpha_{i_2},\cdots,\alpha_{i_r}$ 是 $\alpha_1,\alpha_2,\cdots,\alpha_s$ 的一个极大线性无关组．
+  \ansproof
+  \item 证明：一个向量组的任意一个线性无关组都可以扩充成一个极大线性无关组．
+  \ansproof
+  \item 设 $\alpha_1=(1,-1,2,4)$，$\alpha_2=(0,3,1,2)$，$\alpha_3=(3,0,7,14)$，$\alpha_4=(1,-1,2,0)$，$\alpha_5=(2,1,5,6)$．
+  \begin{enumerate}
+    \item 证明：$\alpha_1,\alpha_2$ 线性无关；
+  \anssub
+    \item 把 $\alpha_1,\alpha_2$ 扩充成一极大线性无关组．
+  \anssub
+  \end{enumerate}
+  \item 求下列向量组的极大线性无关组与秩：
+  \begin{enumerate}
+    \item $\alpha_1=(6,4,1,-1,2)$，$\alpha_2=(1,0,2,3,-4)$，$\alpha_3=(1,4,-9,-16,22)$，$\alpha_4=(7,1,0,-1,3)$；
+  \anssub
+    \item $\alpha_1=(1,-1,2,4)$，$\alpha_2=(0,3,1,2)$，$\alpha_3=(3,0,7,14)$，$\alpha_4=(1,-1,2,0)$，$\alpha_5=(2,1,5,6)$．
+  \anssub
+  \end{enumerate}
+  \item 证明：如果向量组 $\mathrm{(I)}$ 可以经向量组 $\mathrm{(II)}$ 线性表出，那么 $\mathrm{(I)}$ 的秩不超过 $\mathrm{(II)}$ 的秩．
+  \ansproof
+  \item 设 $\alpha_1,\alpha_2,\cdots,\alpha_n$ 是一组 $n$ 维向量，已知单位向量 $\varepsilon_1,\varepsilon_2,\cdots,\varepsilon_n$ 可以经它们线性表出．证明：$\alpha_1,\alpha_2,\cdots,\alpha_n$ 线性无关．
+  \ansproof
+  \item 设 $\alpha_1,\alpha_2,\cdots,\alpha_n$ 是一组 $n$ 维向量．证明：$\alpha_1,\alpha_2,\cdots,\alpha_n$ 线性无关的充要条件是任一 $n$ 维向量都可以经它们线性表出．
+  \ansproof
+  \item 已知向量组 $\alpha_1,\alpha_2,\alpha_3,\alpha_4$ 和线性无关的向量组 $\beta_1,\beta_2,\beta_3$ 满足关系
+  \[
+    \begin{cases}
+      \beta_1-2\beta_2-\beta_3=\alpha_1,\\
+      -3\beta_1+\beta_2-7\beta_3=\alpha_2,\\
+      5\beta_1-3\beta_2+9\beta_3=\alpha_3,\\
+      -2\beta_1+\beta_2-4\beta_3=\alpha_4.
+    \end{cases}
+  \]
+  求出满足 $l_1\alpha_1+l_2\alpha_2+l_3\alpha_3+l_4\alpha_4=0$ 的所有向量 $(l_1,l_2,l_3,l_4)$．
+  \anscompute
+  \item 证明：线性方程组
+  \[
+    \begin{cases}
+      a_{11}x_1+a_{12}x_2+\cdots+a_{1n}x_n=b_1,\\
+      a_{21}x_1+a_{22}x_2+\cdots+a_{2n}x_n=b_2,\\
+      \cdots\cdots\cdots\cdots\cdots\\
+      a_{n1}x_1+a_{n2}x_2+\cdots+a_{nn}x_n=b_n
+    \end{cases}
+  \]
+  对任何 $b_1,b_2,\cdots,b_n$ 都有解的充要条件是系数行列式 $|a_{ij}|\ne 0$．
+  \ansproof
+  \item 已知向量组 $\alpha_1,\alpha_2,\cdots,\alpha_r$ 与 $\alpha_1,\alpha_2,\cdots,\alpha_r,\alpha_{r+1},\cdots,\alpha_s$ 有相同的秩．证明：$\alpha_1,\alpha_2,\cdots,\alpha_r$ 与 $\alpha_1,\alpha_2,\cdots,\alpha_r,\alpha_{r+1},\cdots,\alpha_s$ 等价．
+  \ansproof
+  \item 设 $\beta_1=\alpha_2+\alpha_3+\cdots+\alpha_r$，$\beta_2=\alpha_1+\alpha_3+\cdots+\alpha_r$，$\cdots$，$\beta_r=\alpha_1+\alpha_2+\cdots+\alpha_{r-1}$．证明：$\beta_1,\beta_2,\cdots,\beta_r$ 与 $\alpha_1,\alpha_2,\cdots,\alpha_r$ 有相同的秩．
+  \ansproof
+  \item 计算下列矩阵的秩：
+  \begin{enumerate}
+    \item \[
+      \begin{pmatrix}
+        0&1&1&-1&2\\
+        0&2&-2&-2&0\\
+        0&-1&-1&1&1\\
+        1&1&0&1&-1
+      \end{pmatrix};
+    \]
+  \anssub
+    \item \[
+      \begin{pmatrix}
+        1&-1&2&1&0\\
+        2&-2&4&-2&0\\
+        3&0&6&-1&1\\
+        0&3&0&0&1
+      \end{pmatrix};
+    \]
+  \anssub
+    \item \[
+      \begin{pmatrix}
+        14&12&6&8&2\\
+        6&104&21&9&17\\
+        7&6&3&4&1\\
+        35&30&15&20&5
+      \end{pmatrix};
+    \]
+  \anssub
+    \item \[
+      \begin{pmatrix}
+        1&0&0&1&4\\
+        0&1&0&2&5\\
+        0&0&1&3&6\\
+        1&2&3&14&32\\
+        4&5&6&32&77
+      \end{pmatrix};
+    \]
+  \anssub
+    \item \[
+      \begin{pmatrix}
+        1&0&1&0&0\\
+        1&1&0&0&0\\
+        0&1&1&0&0\\
+        0&0&1&1&0\\
+        0&1&0&1&1
+      \end{pmatrix}.
+    \]
+  \anssub
+  \end{enumerate}
+  \item 讨论 $\lambda,a,b$ 取什么值时下列方程组有解，并求解：
+  \begin{enumerate}
+    \item \[
+      \begin{cases}
+        \lambda x_1+x_2+x_3=1,\\
+        x_1+\lambda x_2+x_3=\lambda,\\
+        x_1+x_2+\lambda x_3=\lambda^2;
+      \end{cases}
+    \]
+  \anssub
+    \item \[
+      \begin{cases}
+        (\lambda+3)x_1+x_2+2x_3=\lambda,\\
+        \lambda x_1+(\lambda-1)x_2+x_3=2\lambda,\\
+        3(\lambda+1)x_1+\lambda x_2+(\lambda+3)x_3=3;
+      \end{cases}
+    \]
+  \anssub
+    \item \[
+      \begin{cases}
+        ax_1+x_2+x_3=4,\\
+        x_1+bx_2+x_3=3,\\
+        x_1+2bx_2+x_3=4.
+      \end{cases}
+    \]
+  \anssub
+  \end{enumerate}
+  \item 求下列齐次线性方程组的一个基础解系，并用它表出全部解：
+  \begin{enumerate}
+    \item \[
+      \begin{cases}
+        x_1+x_2+x_3+x_4+x_5=0,\\
+        3x_1+2x_2+x_3+x_4-3x_5=0,\\
+        x_2+2x_3+2x_4+6x_5=0,\\
+        5x_1+4x_2+3x_3+3x_4-x_5=0;
+      \end{cases}
+    \]
+  \anssub
+    \item \[
+      \begin{cases}
+        x_1+x_2-3x_4-x_5=0,\\
+        x_1-x_2+2x_3-x_4=0,\\
+        4x_1-2x_2+6x_3+3x_4-4x_5=0,\\
+        2x_1+4x_2-2x_3+4x_4-7x_5=0;
+      \end{cases}
+    \]
+  \anssub
+    \item \[
+      \begin{cases}
+        x_1-2x_2+x_3+x_4-x_5=0,\\
+        2x_1+x_2-x_3-x_4-x_5=0,\\
+        x_1+7x_2-5x_3-5x_4+5x_5=0,\\
+        3x_1-x_2-2x_3+x_4-x_5=0;
+      \end{cases}
+    \]
+  \anssub
+    \item \[
+      \begin{cases}
+        x_1-2x_2+x_3-x_4+x_5=0,\\
+        2x_1+x_2-x_3+2x_4-3x_5=0,\\
+        3x_1-2x_2-x_3+x_4-2x_5=0,\\
+        2x_1-5x_2+x_3-2x_4+2x_5=0.
+      \end{cases}
+    \]
+  \anssub
+  \end{enumerate}
+  \item 用导出组的基础解系表出第 $1$ 题 $1)$，$4)$，$6)$ 小题中线性方程组的全部解．
+  \anscompute
+  \item $a,b$ 取什么值时，线性方程组
+  \[
+    \begin{cases}
+      x_1+x_2+x_3+x_4+x_5=1,\\
+      3x_1+2x_2+x_3+x_4-3x_5=a,\\
+      x_2+2x_3+2x_4+6x_5=3,\\
+      5x_1+4x_2+3x_3+3x_4-x_5=b
+    \end{cases}
+  \]
+  有解？在有解的情形，求一般解．
+  \anscompute
+  \item 设 $x_1-x_2=a_1$，$x_2-x_3=a_2$，$x_3-x_4=a_3$，$x_4-x_5=a_4$，$x_5-x_1=a_5$．证明：方程组有解的充要条件为 $\sum\limits_{i=1}^{5}a_i=0$．在有解的情形，求出它的一般解．
+  \ansproof
+  \item 证明：与基础解系等价的线性无关向量组也是基础解系．
+  \ansproof
+  \item 设齐次线性方程组
+  \[
+    \begin{cases}
+      a_{11}x_1+a_{12}x_2+\cdots+a_{1n}x_n=0,\\
+      a_{21}x_1+a_{22}x_2+\cdots+a_{2n}x_n=0,\\
+      \cdots\cdots\cdots\cdots\cdots\\
+      a_{s1}x_1+a_{s2}x_2+\cdots+a_{sn}x_n=0
+    \end{cases}
+  \]
+  的系数矩阵的秩为 $r$．证明：方程组的任意 $n-r$ 个线性无关的解都是它的一个基础解系．
+  \ansproof
+  \item 证明：如果 $\eta_1,\eta_2,\cdots,\eta_t$ 是一线性方程组的解，那么 $u_1\eta_1+u_2\eta_2+\cdots+u_t\eta_t$（其中 $u_1+u_2+\cdots+u_t=1$）也是一个解．
+  \ansproof
+  \item 多项式 $f(x)=2x^3-3x^2+\lambda x+3$ 与 $g(x)=x^3+\lambda x+1$ 在 $\lambda$ 取什么值时，有公共根？
+  \ansgeneral
+  \item 解下列联立方程：
+  \begin{enumerate}
+    \item \[
+      \begin{cases}
+        5y^2-6xy+5x^2-16=0,\\
+        y^2-xy+2x^2-y-x-4=0;
+      \end{cases}
+    \]
+  \anssub
+    \item \[
+      \begin{cases}
+        x^2+y^2+4x-2y+3=0,\\
+        x^2+4xy-y^2+10y-9=0;
+      \end{cases}
+    \]
+  \anssub
+    \item \[
+      \begin{cases}
+        y^2+(x-4)y+x^2-2x+3=0,\\
+        y^3-5y^2+(x+7)y+x^3-x^2-5x-3=0.
+      \end{cases}
+    \]
+  \anssub
+  \end{enumerate}
+  \item 已知线性方程组
+  \[
+    \begin{cases}
+      (2\lambda+1)x_1-\lambda x_2+(\lambda+1)x_3=\lambda-1,\\
+      (\lambda-2)x_1+(\lambda-1)x_2+(\lambda-2)x_3=\lambda,\\
+      (2\lambda-1)x_1+(\lambda-1)x_2+(2\lambda-1)x_3=\lambda.
+    \end{cases}
+  \]
+  \begin{enumerate}
+    \item $\lambda$ 取何值时，该线性方程组有唯一解？
+  \anssub
+    \item $\lambda$ 取何值时，该线性方程组无解？
+  \anssub
+    \item $\lambda$ 取何值时，该线性方程组有无穷多解？并写出它的全部解．
+  \anssub
+  \end{enumerate}
+\end{enumerate}
+
+\section{补充题}
+
+\begin{enumerate}
+  \item 假设向量 $\beta$ 可以经向量组 $\alpha_1,\alpha_2,\cdots,\alpha_r$ 线性表出，证明：表示法是唯一的充要条件是 $\alpha_1,\alpha_2,\cdots,\alpha_r$ 线性无关．
+  \ansproof
+  \item 设 $\alpha_1,\alpha_2,\cdots,\alpha_r$ 是一组线性无关的向量，$\beta_i=\sum\limits_{j=1}^{r}a_{ij}\alpha_j$，$i=1,2,\cdots,r$．证明：$\beta_1,\beta_2,\cdots,\beta_r$ 线性无关的充要条件是
+  \[
+    \begin{vmatrix}
+      a_{11}&a_{12}&\cdots&a_{1r}\\
+      a_{21}&a_{22}&\cdots&a_{2r}\\
+      \vdots&\vdots&&\vdots\\
+      a_{r1}&a_{r2}&\cdots&a_{rr}
+    \end{vmatrix}\ne 0.
+  \]
+  \ansproof
+  \item 证明：$\alpha_1,\alpha_2,\cdots,\alpha_s$（其中 $\alpha_1\ne 0$）线性相关的充要条件是至少有一 $\alpha_i$ $(1<i\le s)$ 可以经 $\alpha_1,\alpha_2,\cdots,\alpha_{i-1}$ 线性表出．
+  \ansproof
+  \item 已知两向量组有相同的秩，且其中之一可以经另一个线性表出．证明：这两个向量组等价．
+  \ansproof
+  \item 设向量组 $\alpha_1,\alpha_2,\cdots,\alpha_s$ 的秩为 $r$，在其中任取 $m$ 个向量 $\alpha_{i_1},\alpha_{i_2},\cdots,\alpha_{i_m}$．证明：此向量组的秩不小于 $r+m-s$．
+  \ansproof
+  \item 设向量组 $\alpha_1,\alpha_2,\cdots,\alpha_s$；$\beta_1,\beta_2,\cdots,\beta_t$；$\alpha_1,\alpha_2,\cdots,\alpha_s,\beta_1,\beta_2,\cdots,\beta_t$ 的秩分别为 $r_1,r_2,r_3$．证明：
+  \[
+    \max(r_1,r_2)\le r_3\le r_1+r_2.
+  \]
+  \ansproof
+  \item 线性方程组
+  \[
+    \begin{cases}
+      a_{11}x_1+a_{12}x_2+\cdots+a_{1n}x_n=0,\\
+      a_{21}x_1+a_{22}x_2+\cdots+a_{2n}x_n=0,\\
+      \cdots\cdots\cdots\cdots\cdots\\
+      a_{n-1,1}x_1+a_{n-1,2}x_2+\cdots+a_{n-1,n}x_n=0
+    \end{cases}
+  \]
+  的系数矩阵为
+  \[
+    A=\begin{pmatrix}
+      a_{11}&a_{12}&\cdots&a_{1n}\\
+      a_{21}&a_{22}&\cdots&a_{2n}\\
+      \vdots&\vdots&&\vdots\\
+      a_{n-1,1}&a_{n-1,2}&\cdots&a_{n-1,n}
+    \end{pmatrix},
+  \]
+  设 $M_i$ 是矩阵 $A$ 中划去第 $i$ 列剩下的 $(n-1)\times(n-1)$ 矩阵的行列式．证明：
+  \begin{enumerate}
+    \item $(M_1,-M_2,\cdots,(-1)^{n-1}M_n)$ 是方程组的一个解；
+  \anssub
+    \item 如果 $A$ 的秩为 $n-1$，那么方程组的解全是 $(M_1,-M_2,\cdots,(-1)^{n-1}M_n)$ 的倍数．
+  \anssub
+  \end{enumerate}
+  \item 设 $\alpha_i=(a_{i1},a_{i2},\cdots,a_{in})$ $(i=1,2,\cdots,s)$，$\beta=(b_1,b_2,\cdots,b_n)$．证明：如果线性方程组
+  \[
+    \begin{cases}
+      a_{11}x_1+a_{12}x_2+\cdots+a_{1n}x_n=0,\\
+      a_{21}x_1+a_{22}x_2+\cdots+a_{2n}x_n=0,\\
+      \cdots\cdots\cdots\cdots\cdots\\
+      a_{s1}x_1+a_{s2}x_2+\cdots+a_{sn}x_n=0
+    \end{cases}
+  \]
+  的解全是方程 $b_1x_1+b_2x_2+\cdots+b_nx_n=0$ 的解，那么 $\beta$ 可以经 $\alpha_1,\alpha_2,\cdots,\alpha_s$ 线性表出．
+  \ansproof
+  \item 设 $\eta_0$ 是线性方程组的一个解，$\eta_1,\eta_2,\cdots,\eta_t$ 是它的导出组的一个基础解系，令
+  \[
+    \gamma_1=\eta_0,\quad\gamma_2=\eta_1+\eta_0,\quad\cdots,\quad\gamma_{t+1}=\eta_t+\eta_0.
+  \]
+  证明：线性方程组的任意一个解 $\gamma$ 都可以表成
+  \[
+    \gamma=u_1\gamma_1+u_2\gamma_2+\cdots+u_{t+1}\gamma_{t+1},
+  \]
+  其中 $u_1+u_2+\cdots+u_{t+1}=1$．
+  \ansproof
+  \item 设
+  \[
+    A=\begin{pmatrix}
+      a_{11}&a_{12}&\cdots&a_{1n}\\
+      a_{21}&a_{22}&\cdots&a_{2n}\\
+      \vdots&\vdots&&\vdots\\
+      a_{n1}&a_{n2}&\cdots&a_{nn}
+    \end{pmatrix}
+  \]
+  为一实数域上的矩阵．证明：
+  \begin{enumerate}
+    \item 如果 $|a_{ii}|>\sum\limits_{j\ne i}|a_{ij}|$，$i=1,2,\cdots,n$，那么 $|A|\ne 0$；
+  \anssub
+    \item 如果 $a_{ii}>\sum\limits_{j\ne i}|a_{ij}|$，$i=1,2,\cdots,n$，那么 $|A|>0$．
+  \anssub
+  \end{enumerate}
+  \item 求出通过点 $M_1(1,0,0)$，$M_2(1,1,0)$，$M_3(1,1,1)$，$M_4(0,1,1)$ 的球面的方程．
+  \anscompute
+  \item 求出通过点 $M_1(0,0)$，$M_2(1,0)$，$M_3(2,1)$，$M_4(1,1)$，$M_5(1,4)$ 的二次曲线的方程．
+  \anscompute
+  \item 求下列曲线的直角坐标方程：
+  \begin{enumerate}
+    \item $x=t^2-t+1$，$y=2t^2+t-3$；
+  \anssub
+    \item $x=\dfrac{2t+1}{t^2+1}$，$y=\dfrac{t^2+2t-1}{t^2+1}$．
+  \anssub
+  \end{enumerate}
+  \item 求下列多项式的结式：
+  \begin{enumerate}
+    \item $\dfrac{x^5-1}{x-1}$ 与 $\dfrac{x^7-1}{x-1}$；
+  \anssub
+    \item $x^n+x+1$ 与 $x^2-3x+2$；
+  \anssub
+    \item $x^n+1$ 与 $(x-1)^n$．
+  \anssub
+  \end{enumerate}
+  \item 设线性方程组 $\sum\limits_{i=1}^{n}x_i\alpha_i=\beta$，其中列向量 $\alpha_i$ $(i=1,2,\cdots,n)$，$\beta\in P^m$．证明：第 $k$ 个列向量 $\alpha_k$ 不能经其余列向量线性表出的充要条件是任何解 $X$ 的第 $k$ 个分量 $x_k$ 取同一值．
+  \ansproof
+  \item 一般情况下，一个向量组的极大线性无关组不唯一．请确定什么向量组的极大线性无关组唯一？
+  \ansgeneral
+  \item 设非齐次线性方程组
+  \[
+    \begin{cases}
+      a_{11}x_1+a_{12}x_2+\cdots+a_{1n}x_n=b_1,\\
+      a_{21}x_1+a_{22}x_2+\cdots+a_{2n}x_n=b_2,\\
+      \cdots\cdots\cdots\cdots\cdots\\
+      a_{s1}x_1+a_{s2}x_2+\cdots+a_{sn}x_n=b_s % TODO: 原书此处末项印作 a_{sn}x，似缺下标 n
+    \end{cases}
+  \]
+  的系数矩阵为 $A$，常数项向量为 $\beta$．
+  \begin{enumerate}
+    \item 若方程组有解且秩$(A)=r$，则方程组的解向量中最多有多少个线性无关解？
+  \anssub
+    \item 若方程组对任意非零 $s$ 维列向量 $\beta$ 都有解，求秩$(A)$．
+  \anssub
+  \end{enumerate}
+  \item 设行列式
+  \[
+    \begin{vmatrix}
+      \zeta_{11}&\zeta_{21}&\cdots&\zeta_{n1}\\
+      \zeta_{12}&\zeta_{22}&\cdots&\zeta_{n2}\\
+      \vdots&\vdots&&\vdots\\
+      \zeta_{1n}&\zeta_{2n}&\cdots&\zeta_{nn}
+    \end{vmatrix}\ne 0.
+  \]
+  \begin{enumerate}
+    \item 证明满足方程组
+    \[
+      \sum_{i=1}^{n}x_{ijl}\zeta_{it}=\zeta_{jt}\zeta_{lt},\quad 1\le j,l,t\le n
+    \]
+    的未知量 $x_{ijl}$ 存在且唯一；
+  \anssub
+    \item 求出 $x_{ijl}$ $(1\le i,j,l\le n)$ 的值．
+  \anssub
+  \end{enumerate}
+  \item $f_1,f_2,\cdots,f_r$ 是定义在正整数集 $\mathbf{N}_+$ 上取值于数域 $P$ 的函数，证明：不存在一组不全为零的数 $l_1,l_2,\cdots,l_r$，使得 $l_1f_1+l_2f_2+\cdots+l_rf_r$ 为零函数的充要条件是，存在 $i_1,i_2,\cdots,i_r\in\mathbf{N}_+$，使得矩阵
+  \[
+    \begin{pmatrix}
+      f_1(i_1)&f_1(i_2)&\cdots&f_1(i_r)\\
+      f_2(i_1)&f_2(i_2)&\cdots&f_2(i_r)\\
+      \vdots&\vdots&&\vdots\\
+      f_r(i_1)&f_r(i_2)&\cdots&f_r(i_r)
+    \end{pmatrix}
+  \]
+  的秩为 $r$．
+  \ansproof
+  \item 在一个与外界隔绝的岛上，有 $A_1,A_2,A_3,A_4,A_5$ 五个生产部门供给岛上居民所有的生活需求．每个部门产品数量都换算成标准单位，设
+  \[
+    M=\begin{pmatrix}
+      0.1&0.2&0.05&0.1&0.05\\
+      0.3&0.1&0.2&0.2&0.1\\
+      0.05&0.1&0.3&0.1&0.2\\
+      0.1&0.2&0.1&0.3&0.1\\
+      0.05&0.1&0.2&0.1&0.3
+    \end{pmatrix},
+  \]
+  其中 $M$ 的 $(i,j)$ 元素表示 $A_j$ 部门生产 $1$ 个单位产品所需 $A_i$ 部门产品的单位数．若全岛居民每年需要 $A_1,A_2,A_3,A_4,A_5$ 各部门的产品分别为 $100$ 单位、$200$ 单位、$300$ 单位、$150$ 单位、$250$ 单位，则五个部门各生产多少单位的产品才能恰好满足全岛居民每年的需要？
+  \anscompute
+\end{enumerate}

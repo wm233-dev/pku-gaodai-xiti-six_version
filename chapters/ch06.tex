@@ -1,0 +1,319 @@
+\chapter{线性空间}
+
+\section{习题}
+
+\begin{enumerate}
+  \item 设 $M\subset N$．证明：
+  \[
+    M\cap N=M,\qquad M\cup N=N.
+  \]
+  \ansproof
+  \item 证明：
+  \begin{align*}
+    M\cap(N\cup L)&=(M\cap N)\cup(M\cap L),\\
+    M\cup(N\cap L)&=(M\cup N)\cap(M\cup L).
+  \end{align*}
+  \ansproof
+  \item 检验下列集合对于所指的线性运算是否构成实数域上的线性空间：
+  \begin{enumerate}
+    \item 次数等于 $n(n\ge 1)$ 的实系数多项式的全体，对于多项式的加法和数量乘法；
+  \anssub
+    \item 设 $A$ 是一个 $n\times n$ 实矩阵，$A$ 的实系数多项式 $f(A)$ 的全体，对于矩阵的加法和数量乘法；
+  \anssub
+    \item 全体 $n$ 阶实对称（反称，上三角形）矩阵，对于矩阵的加法和数量乘法；
+  \anssub
+    \item 平面上不平行于某一向量的全部向量所成的集合，对于向量的加法和数量乘法；
+  \anssub
+    \item 全体实数的二元数列，对于如下定义的运算：
+    \[
+    \begin{gathered}
+      (a_1,b_1)\oplus(a_2,b_2)=(a_1+a_2,\ b_1+b_2+a_1a_2),\\
+      k\circ(a_1,b_1)=\left(ka_1,\ kb_1+\frac{k(k-1)}{2}a_1^2\right);
+    \end{gathered}
+    \]
+  \anssub
+    \item 平面上全体向量，对于通常的加法和如下定义的数量乘法：
+    \[
+      k\circ\alpha=0;
+    \]
+  \anssub
+    \item 集合与加法同 6)，数量乘法定义为
+    \[
+      k\circ\alpha=\alpha;
+    \]
+  \anssub
+    \item 全体正实数 $\mathbb{R}^+$，加法与数量乘法定义为
+    \[
+      a\oplus b=ab,\qquad k\circ a=a^k.
+    \]
+  \anssub
+  \end{enumerate}
+  \item 在线性空间中，证明：
+  \begin{enumerate}
+    \item $k0=0$；
+  \anssub
+    \item $k(\alpha-\beta)=k\alpha-k\beta$.
+  \anssub
+  \end{enumerate}
+  \item 证明：在实函数空间中，$1,\cos^2 t,\cos 2t$ 是线性相关的．
+  \ansproof
+  \item 证明：如果 $f_1(x),f_2(x),f_3(x)$ 是线性空间 $P[x]$ 中三个互素的多项式，但其中任意两个都不互素，那么它们线性无关．
+  \ansproof
+  \item 在 $P^4$ 中，设
+  \begin{enumerate}
+    \item $\varepsilon_1=(1,1,1,1)$，$\varepsilon_2=(1,1,-1,-1)$，$\varepsilon_3=(1,-1,1,-1)$，$\varepsilon_4=(1,-1,-1,1)$，$\xi=(1,2,1,1)$；
+  \anssub
+    \item $\varepsilon_1=(1,1,0,1)$，$\varepsilon_2=(2,1,3,1)$，$\varepsilon_3=(1,1,0,0)$，$\varepsilon_4=(0,1,-1,-1)$，$\xi=(0,0,0,1)$，
+  \anssub
+  \end{enumerate}
+  求向量 $\xi$ 在基 $\varepsilon_1,\varepsilon_2,\varepsilon_3,\varepsilon_4$ 下的坐标．
+  \item 求下列线性空间的维数与一组基：
+  \begin{enumerate}
+    \item 数域 $P$ 上的空间 $P^{n\times n}$；
+  \anssub
+    \item $P^{n\times n}$ 中全体对称（反称、上三角形）矩阵构成的数域 $P$ 上的空间；
+  \anssub
+    \item 第 3 题 8) 中的空间；
+  \anssub
+    \item 实数域上由矩阵 $A$ 的全体实系数多项式构成的空间，其中
+    \[
+      A=\begin{pmatrix}
+        1&0&0\\
+        0&\omega&0\\
+        0&0&\omega^2
+      \end{pmatrix},
+      \qquad
+      \omega=\frac{-1+\sqrt{3}\,i}{2}.
+    \]
+  \anssub
+  \end{enumerate}
+  \item 在 $P^4$ 中，求由基 $\varepsilon_1,\varepsilon_2,\varepsilon_3,\varepsilon_4$ 到基 $\eta_1,\eta_2,\eta_3,\eta_4$ 的过渡矩阵，并求向量 $\xi$ 在所指基下的坐标．设
+  \begin{enumerate}
+    \item
+    \[
+      \begin{cases}
+        \varepsilon_1=(1,0,0,0),\\
+        \varepsilon_2=(0,1,0,0),\\
+        \varepsilon_3=(0,0,1,0),\\
+        \varepsilon_4=(0,0,0,1),
+      \end{cases}
+      \qquad
+      \begin{cases}
+        \eta_1=(2,1,-1,1),\\
+        \eta_2=(0,3,1,0),\\
+        \eta_3=(5,3,2,1),\\
+        \eta_4=(6,6,1,3),
+      \end{cases}
+    \]
+    $\xi=(x_1,x_2,x_3,x_4)$ 在 $\eta_1,\eta_2,\eta_3,\eta_4$ 下的坐标；
+  \anssub
+    \item
+    \[
+      \begin{cases}
+        \varepsilon_1=(1,2,-1,0),\\
+        \varepsilon_2=(1,-1,1,1),\\
+        \varepsilon_3=(-1,2,1,1),\\
+        \varepsilon_4=(-1,-1,0,1),
+      \end{cases}
+      \qquad
+      \begin{cases}
+        \eta_1=(2,1,0,1),\\
+        \eta_2=(0,1,2,2),\\
+        \eta_3=(-2,1,1,2),\\
+        \eta_4=(1,3,1,2),
+      \end{cases}
+    \]
+    $\xi=(1,0,0,0)$ 在 $\varepsilon_1,\varepsilon_2,\varepsilon_3,\varepsilon_4$ 下的坐标；
+  \anssub
+    \item
+    \[
+      \begin{cases}
+        \varepsilon_1=(1,1,1,1),\\
+        \varepsilon_2=(1,1,-1,-1),\\
+        \varepsilon_3=(1,-1,1,-1),\\
+        \varepsilon_4=(1,-1,-1,1),
+      \end{cases}
+      \qquad
+      \begin{cases}
+        \eta_1=(1,1,0,1),\\
+        \eta_2=(2,1,3,1),\\
+        \eta_3=(1,1,0,0),\\
+        \eta_4=(0,1,-1,-1),
+      \end{cases}
+    \]
+    $\xi=(1,0,0,-1)$ 在 $\eta_1,\eta_2,\eta_3,\eta_4$ 下的坐标．
+  \anssub
+  \end{enumerate}
+  \item 继第 9 题 1)，求一非零向量 $\xi$，它在基 $\varepsilon_1,\varepsilon_2,\varepsilon_3,\varepsilon_4$ 与 $\eta_1,\eta_2,\eta_3,\eta_4$ 下有相同的坐标．
+  \anscompute
+  \item 证明：实数域作为它自身上的线性空间与第 3 题 8) 中的空间同构．
+  \ansproof
+  \item 设 $V_1,V_2$ 都是线性空间 $V$ 的子空间，且 $V_1\subset V_2$．证明：如果 $V_1$ 的维数和 $V_2$ 的维数相等，那么 $V_1=V_2$．
+  \ansproof
+  \item 设 $A\in P^{n\times n}$．
+  \begin{enumerate}
+    \item 证明：全体与 $A$ 可交换的矩阵组成 $P^{n\times n}$ 的一子空间，记作 $C(A)$；
+  \anssub
+    \item 当 $A=E$ 时，求 $C(A)$；
+  \anssub
+    \item 当
+    \[
+      A=\begin{pmatrix}
+        1&0&0&\cdots&0\\
+        0&2&0&\cdots&0\\
+        \vdots&\vdots&\vdots&&\vdots\\
+        0&0&0&\cdots&n
+      \end{pmatrix}
+    \]
+    时，求 $C(A)$ 的维数和一组基．
+  \anssub
+  \end{enumerate}
+  \item 设
+  \[
+    A=\begin{pmatrix}
+      1&0&0\\
+      0&1&0\\
+      3&1&2
+    \end{pmatrix},
+  \]
+  求 $P^{3\times 3}$ 中全体与 $A$ 可交换的矩阵所成子空间的维数和一组基．
+  \anscompute
+  \item 如果 $c_1\alpha+c_2\beta+c_3\gamma=0$，且 $c_1c_3\ne 0$，证明：$L(\alpha,\beta)=L(\beta,\gamma)$．
+  \ansproof
+  \item 在 $P^4$ 中，求由向量 $\alpha_i(i=1,2,3,4)$ 生成的子空间的基与维数．设
+  \begin{enumerate}
+    \item $\alpha_1=(2,1,3,1)$，$\alpha_2=(1,2,0,1)$，$\alpha_3=(-1,1,-3,0)$，$\alpha_4=(1,1,1,1)$；
+  \anssub
+    \item $\alpha_1=(2,1,3,-1)$，$\alpha_2=(-1,1,-3,1)$，$\alpha_3=(4,5,3,-1)$，$\alpha_4=(1,5,-3,1)$．
+  \anssub
+  \end{enumerate}
+  \item 在 $P^4$ 中，求由齐次方程组
+  \[
+    \begin{cases}
+      3x_1+2x_2-5x_3+4x_4=0,\\
+      3x_1-x_2+3x_3-3x_4=0,\\
+      3x_1+5x_2-13x_3+11x_4=0
+    \end{cases}
+  \]
+  确定的解空间的基与维数．
+  \anscompute
+  \item 求由向量 $\alpha_i$ 生成的子空间与由向量 $\beta_i$ 生成的子空间的交的基与维数．设
+  \begin{enumerate}
+    \item
+    \[
+      \begin{cases}
+        \alpha_1=(1,2,1,0),\\
+        \alpha_2=(-1,1,1,1),
+      \end{cases}
+      \qquad
+      \begin{cases}
+        \beta_1=(2,-1,0,1),\\
+        \beta_2=(1,-1,3,7);
+      \end{cases}
+    \]
+  \anssub
+    \item
+    \[
+      \begin{cases}
+        \alpha_1=(1,1,0,0),\\
+        \alpha_2=(1,0,1,1),
+      \end{cases}
+      \qquad
+      \begin{cases}
+        \beta_1=(0,0,1,1),\\
+        \beta_2=(0,1,1,0);
+      \end{cases}
+    \]
+  \anssub
+    \item
+    \[
+      \begin{cases}
+        \alpha_1=(1,2,-1,-2),\\
+        \alpha_2=(3,1,1,1),\\
+        \alpha_3=(-1,0,1,-1),
+      \end{cases}
+      \qquad
+      \begin{cases}
+        \beta_1=(2,5,-6,-5),\\
+        \beta_2=(-1,2,-7,3).
+      \end{cases}
+    \]
+  \anssub
+  \end{enumerate}
+  \item 设 $V_1$ 与 $V_2$ 分别是齐次方程组 $x_1+x_2+\cdots+x_n=0$ 与 $x_1=x_2=\cdots=x_n$ 的解空间．证明：$P^n=V_1\oplus V_2$．
+  \ansproof
+\end{enumerate}
+
+\section{补充题}
+
+\begin{enumerate}
+  \item
+  \begin{enumerate}
+    \item 证明：在 $P[x]_n$ 中，多项式
+    \[
+      f_i=(x-a_1)\cdots(x-a_{i-1})(x-a_{i+1})\cdots(x-a_n),\qquad i=1,2,\cdots,n
+    \]
+    是一组基，其中 $a_1,a_2,\cdots,a_n$ 是互不相同的数；
+  \anssub
+    \item 在 1) 中，取 $a_1,a_2,\cdots,a_n$ 是全体 $n$ 次单位根，求由基 $1,x,\cdots,x^{n-1}$ 到基 $f_1,f_2,\cdots,f_n$ 的过渡矩阵．
+  \anssub
+  \end{enumerate}
+  \item 设 $\alpha_1,\alpha_2,\cdots,\alpha_n$ 是 $n$ 维线性空间 $V$ 的一组基，$A$ 是 $n\times s$ 矩阵，
+  \[
+    (\beta_1,\beta_2,\cdots,\beta_s)=(\alpha_1,\alpha_2,\cdots,\alpha_n)A.
+  \]
+  证明：$L(\beta_1,\beta_2,\cdots,\beta_s)$ 的维数等于 $A$ 的秩．
+  \ansproof
+  \item 设 $f(x_1,x_2,\cdots,x_n)$ 是一秩为 $n$ 的二次型．证明：存在 $\mathbb{R}^n$ 的一个
+  \[
+    \frac{1}{2}\left(n-|s|\right)
+  \]
+  维子空间 $V_1$（其中 $s$ 为符号差），使对任一 $(x_1,x_2,\cdots,x_n)\in V_1$ 有 $f(x_1,x_2,\cdots,x_n)=0$．
+  \ansproof
+  \item 设 $V_1,V_2$ 是线性空间 $V$ 的两个非平凡的子空间．证明：在 $V$ 中存在 $\alpha$ 使 $\alpha\notin V_1$，$\alpha\notin V_2$ 同时成立．
+  \ansproof
+  \item 设 $V_1,V_2,\cdots,V_s$ 是线性空间 $V$ 的 $s$ 个非平凡的子空间．证明：$V$ 中至少有一向量不属于 $V_1,V_2,\cdots,V_s$ 中任意一个．
+  \ansproof
+  \item 设 $V$ 是以 0 为极限的实数数列全体，即
+  \[
+    V=\left\{\{a_n\}\ \middle|\ a_n\in\mathbb{R},\ \lim_{n\to\infty}a_n=0\right\}.
+  \]
+  在 $V$ 中定义加法与数乘运算：$\{a_n\}+\{b_n\}=\{a_n+b_n\}$，$k\{a_n\}=\{ka_n\}$，$k\in\mathbb{R}$．证明：$V$ 是 $\mathbb{R}$ 上的无限维线性空间．
+  \ansproof
+  \item 设 $su(2)$ 是满足 $\overline{X}^{\mathrm{T}}=-X$ 且 $\operatorname{tr}X=0$ 的二阶复方阵的集合．证明：$su(2)$ 为实数域 $\mathbb{R}$ 上的线性空间，但不是复数域 $\mathbb{C}$ 上的线性空间．
+  \ansproof
+  \item 数域 $P$ 上形如
+  \[
+    \begin{pmatrix}
+      a_1&a_2&a_3&\cdots&a_n\\
+      a_n&a_1&a_2&\cdots&a_{n-1}\\
+      \vdots&\vdots&\vdots&&\vdots\\
+      a_2&a_3&a_4&\cdots&a_1
+    \end{pmatrix}
+  \]
+  的 $n$ 阶方阵称为循环矩阵．设 $U$ 是数域 $P$ 上所有 $n$ 阶循环矩阵组成的集合．证明：$U$ 是 $P^{n\times n}$ 的一个子空间，并求出 $U$ 的维数和一组基．
+  \ansproof
+  \item 设 $F(P)$ 为 $P^{n\times n}(n\ge 2)$ 上的所有映射 $f:P^{n\times n}\to P$ 关于如下加法和数乘运算构成的线性空间：
+  \[
+    (f+g)(A)=f(A)+g(A),\qquad (kf)(A)=kf(A),
+  \]
+  其中 $f,g\in F(P)$，$k\in P$，$A\in P^{n\times n}$．称映射 $f\in F(P)$ 为列线性函数，如果 $f$ 对矩阵的每一列都是线性的，即对任意 $n$ 阶方阵 $(\beta_1,\beta_2,\cdots,\beta_n)$ 都有
+  \begin{align*}
+    &f(\beta_1,\cdots,\beta_{j-1},\beta_j+\beta_j',\beta_{j+1},\cdots,\beta_n)\\
+    ={}&f(\beta_1,\cdots,\beta_{j-1},\beta_j,\beta_{j+1},\cdots,\beta_n)
+      +f(\beta_1,\cdots,\beta_{j-1},\beta_j',\beta_{j+1},\cdots,\beta_n)
+  \end{align*}
+  和
+  \[
+    f(\beta_1,\cdots,\beta_{j-1},k\beta_j,\beta_{j+1},\cdots,\beta_n)
+    =kf(\beta_1,\cdots,\beta_{j-1},\beta_j,\beta_{j+1},\cdots,\beta_n),\qquad k\in P
+  \]
+  成立，其中 $\beta$ 为 $P^n$ 中任意向量．若 $A\in P^{n\times n}$ 有两列向量相同时必有 $f(A)=0$，则称 $f$ 为反称的．设 $\Lambda(P)$ 为 $F(P)$ 中所有反称列线性函数构成的集合．证明：$\Lambda(P)$ 是 $F(P)$ 的一个子空间，并求 $\Lambda(P)$ 的维数和一组基．
+  \ansproof
+  \item 设 $V_1,V_2,V_3$ 为线性空间 $V$ 的子空间．证明：
+  \[
+    \text{维}(V_1\cap V_2)+\text{维}((V_1+V_2)\cap V_3)
+    =\text{维}(V_2\cap V_3)+\text{维}((V_2+V_3)\cap V_1).
+  \]
+  \ansproof
+\end{enumerate}

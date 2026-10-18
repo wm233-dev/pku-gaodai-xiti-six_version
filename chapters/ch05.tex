@@ -1,0 +1,210 @@
+\chapter{二次型}
+\section{习题}
+\begin{enumerate}
+  \item （I）用非退化线性替换化下列二次型为标准形，并利用矩阵验算所得结果：
+  \begin{enumerate}
+    \item $-4x_1x_2+2x_1x_3+2x_2x_3$；
+  \anssub
+    \item $x_1^2+2x_1x_2+2x_2^2+4x_2x_3+4x_3^2$；
+  \anssub
+    \item $x_1^2-3x_2^2-2x_1x_2+2x_1x_3-6x_2x_3$；
+  \anssub
+    \item $8x_1x_4+2x_3x_4+2x_2x_3+8x_2x_4$；
+  \anssub
+    \item $x_1x_2+x_1x_3+x_1x_4+x_2x_3+x_2x_4+x_3x_4$；
+  \anssub
+    \item $x_1^2+2x_2^2+x_4^2+4x_1x_2+4x_1x_3+2x_1x_4+2x_2x_3+2x_2x_4+2x_3x_4$；
+  \anssub
+    \item $x_1^2+x_2^2+x_3^2+x_4^2+2x_1x_2+2x_2x_3+2x_3x_4$．
+  \anssub
+  \end{enumerate}
+  （II）把上述二次型进一步化为规范形，分实系数、复系数两种情形；并写出所作的非退化线性替换．
+  \item 证明：秩等于 $r$ 的对称矩阵可以表成 $r$ 个秩等于 $1$ 的对称矩阵之和．
+  \ansproof
+  \item 证明：
+  \[
+    \begin{pmatrix}
+      \lambda_1&&&\\
+      &\lambda_2&&\\
+      &&\ddots&\\
+      &&&\lambda_n
+    \end{pmatrix}
+    \quad\text{与}\quad
+    \begin{pmatrix}
+      \lambda_{i_1}&&&\\
+      &\lambda_{i_2}&&\\
+      &&\ddots&\\
+      &&&\lambda_{i_n}
+    \end{pmatrix}
+  \]
+  合同，其中 $i_1i_2\cdots i_n$ 是 $1,2,\cdots,n$ 的一个排列．
+  \ansproof
+  \item 设 $A$ 是一个 $n$ 阶矩阵．证明：
+  \begin{enumerate}
+    \item $A$ 是反称矩阵当且仅当对任意一个 $n$ 维向量 $X$，有 $X^{\mathrm{T}}AX=0$；
+  \anssub
+    \item 如果 $A$ 是对称矩阵，且对任意一个 $n$ 维向量 $X$ 有 $X^{\mathrm{T}}AX=0$，那么 $A=O$．
+  \anssub
+  \end{enumerate}
+  \item 如果把 $n$ 阶实对称矩阵按合同分类，即两个 $n$ 阶实对称矩阵属于同一类当且仅当它们合同，问共有几类？
+  \ansgeneral
+  \item 证明：一个实二次型可以分解成两个实系数的一次齐次多项式的乘积的充要条件是，它的秩等于 $2$ 和符号差等于 $0$，或者秩等于 $1$．
+  \ansproof
+  \item 判别下列二次型是否正定：
+  \begin{enumerate}
+    \item $99x_1^2-12x_1x_2+48x_1x_3+130x_2^2-60x_2x_3+71x_3^2$；
+  \anssub
+    \item $10x_1^2+8x_1x_2+24x_1x_3+2x_2^2-28x_2x_3+x_3^2$；
+  \anssub
+    \item $\sum\limits_{i=1}^{n}x_i^2+\sum\limits_{1\leqslant i<j\leqslant n}x_ix_j$；
+  \anssub
+    \item $\sum\limits_{i=1}^{n}x_i^2+\sum\limits_{i=1}^{n-1}x_ix_{i+1}$．
+  \anssub
+  \end{enumerate}
+  \item $t$ 取什么值时，下列二次型是正定的：
+  \begin{enumerate}
+    \item $x_1^2+x_2^2+5x_3^2+2tx_1x_2-2x_1x_3+4x_2x_3$；
+  \anssub
+    \item $x_1^2+4x_2^2+x_3^2+2tx_1x_2+10x_1x_3+6x_2x_3$．
+  \anssub
+  \end{enumerate}
+  \item 证明：如果 $A$ 是正定矩阵，那么 $A$ 的主子式全大于零．
+  \ansproof
+  \item 设 $A$ 是实对称矩阵．证明：当实数 $t$ 充分大之后，$tE+A$ 是正定矩阵．
+  \ansproof
+  \item 证明：如果 $A$ 是正定矩阵，那么 $A^{-1}$ 也是正定矩阵．
+  \ansproof
+  \item 设 $A$ 为一个 $n$ 阶实对称矩阵，且 $|A|<0$．证明：必存在 $n$ 维实向量 $X\neq0$，使 $X^{\mathrm{T}}AX<0$．
+  \ansproof
+  \item 如果 $A,B$ 都是 $n$ 阶正定矩阵，证明：$A+B$ 也是正定矩阵．
+  \ansproof
+  \item 证明：二次型 $f(x_1,x_2,\cdots,x_n)$ 是半正定的充要条件是它的正惯性指数与秩相等．
+  \ansproof
+  \item 证明：$n\sum\limits_{i=1}^{n}x_i^2-\left(\sum\limits_{i=1}^{n}x_i\right)^2$ 是半正定的．
+  \ansproof
+  \item 设 $f(x_1,x_2,\cdots,x_n)=X^{\mathrm{T}}AX$ 是一实二次型．已知有 $n$ 维实向量 $X_1,X_2$，使
+  \[
+    X_1^{\mathrm{T}}AX_1>0,\quad X_2^{\mathrm{T}}AX_2<0.
+  \]
+  证明：必存在 $n$ 维实向量 $X_0\neq0$，使 $X_0^{\mathrm{T}}AX_0=0$．
+  \ansproof
+  \item 设 $A$ 是一实矩阵．证明：秩$(A^{\mathrm{T}}A)=$秩$(A)$．
+  \ansproof
+\end{enumerate}
+
+\section{补充题}
+\begin{enumerate}
+  \item 用非退化线性替换化下列二次型为标准形，并用矩阵验算所得结果：
+  \begin{enumerate}
+    \item $x_1x_{2n}+x_2x_{2n-1}+\cdots+x_nx_{n+1}$；
+  \anssub
+    \item $x_1x_2+x_2x_3+\cdots+x_{n-1}x_n$；
+  \anssub
+    \item $\sum\limits_{i=1}^{n}x_i^2+\sum\limits_{1\leqslant i<j\leqslant n}x_ix_j$；
+  \anssub
+    \item $\sum\limits_{i=1}^{n}(x_i-\bar{x})^2$，其中 $\bar{x}=\dfrac{x_1+x_2+\cdots+x_n}{n}$．
+  \anssub
+  \end{enumerate}
+  \item 设实二次型
+  \[
+    f(x_1,x_2,\cdots,x_n)=\sum_{i=1}^{s}(a_{i1}x_1+a_{i2}x_2+\cdots+a_{in}x_n)^2.
+  \]
+  证明：$f(x_1,x_2,\cdots,x_n)$ 的秩等于矩阵
+  \[
+    A=\begin{pmatrix}
+      a_{11}&a_{12}&\cdots&a_{1n}\\
+      a_{21}&a_{22}&\cdots&a_{2n}\\
+      \vdots&\vdots&&\vdots\\
+      a_{s1}&a_{s2}&\cdots&a_{sn}
+    \end{pmatrix}
+  \]
+  的秩．
+  \ansproof
+  \item 设 $f(x_1,x_2,\cdots,x_n)=l_1^2+l_2^2+\cdots+l_p^2-l_{p+1}^2-\cdots-l_{p+q}^2$，其中 $l_i(i=1,2,\cdots,p+q)$ 是 $x_1,x_2,\cdots,x_n$ 的一次齐次式．证明：$f(x_1,x_2,\cdots,x_n)$ 的正惯性指数不大于 $p$，负惯性指数不大于 $q$．
+  \ansproof
+  \item 设
+  \[
+    A=\begin{pmatrix}A_{11}&A_{12}\\A_{21}&A_{22}\end{pmatrix}
+  \]
+  是一对称矩阵，且 $|A_{11}|\neq0$．证明：存在 $T=\begin{pmatrix}E&X\\O&E\end{pmatrix}$，使
+  \[
+    T^{\mathrm{T}}AT=\begin{pmatrix}A_{11}&O\\O&*\end{pmatrix},
+  \]
+  其中 $*$ 表示一个阶数与 $A_{22}$ 相同的矩阵．
+  \ansproof
+  \item 设 $A$ 是反称矩阵．证明：$A$ 合同于矩阵
+  \[
+    \begin{pmatrix}
+      0&1&&&&&&&&\\
+      -1&0&&&&&&&&\\
+      &&0&1&&&&&&\\
+      &&-1&0&&&&&&\\
+      &&&&\ddots&&&&&\\
+      &&&&&0&1&&&\\
+      &&&&&-1&0&&&\\
+      &&&&&&&0&&\\
+      &&&&&&&&\ddots&\\
+      &&&&&&&&&0
+    \end{pmatrix}
+  \]
+  \ansproof
+  \item 设 $A$ 是 $n$ 阶实对称矩阵．证明：存在一正实数 $c$，使对任一 $n$ 维实向量 $X$，都有
+  \[
+    |X^{\mathrm{T}}AX|\leqslant cX^{\mathrm{T}}X.
+  \]
+  \ansproof
+  \item 主对角线上元素全是 $1$ 的上三角形矩阵称为特殊上三角形矩阵．
+  \begin{enumerate}
+    \item 设 $A$ 是一对称矩阵，$T$ 为特殊上三角形矩阵，而 $B=T^{\mathrm{T}}AT$，证明：$A$ 与 $B$ 对应的顺序主子式有相同的值；
+  \anssub
+    \item 证明：如果对称矩阵 $A$ 的顺序主子式全不为 $0$，那么一定有一特殊上三角形矩阵 $T$，使 $T^{\mathrm{T}}AT$ 成对角线；
+  \anssub
+    \item 利用以上结果证明定理 $7$ 的充分性．
+  \anssub
+  \end{enumerate}
+  \item 证明：
+  \begin{enumerate}
+    \item 如果 $\sum\limits_{i=1}^{n}\sum\limits_{j=1}^{n}a_{ij}x_ix_j(a_{ij}=a_{ji})$ 是正定二次型，那么
+    \[
+      f(y_1,y_2,\cdots,y_n)=
+      \begin{vmatrix}
+        a_{11}&a_{12}&\cdots&a_{1n}&y_1\\
+        a_{21}&a_{22}&\cdots&a_{2n}&y_2\\
+        \vdots&\vdots&&\vdots&\vdots\\
+        a_{n1}&a_{n2}&\cdots&a_{nn}&y_n\\
+        y_1&y_2&\cdots&y_n&0
+      \end{vmatrix}
+    \]
+    是负定二次型；
+  \anssub
+    \item 如果 $A$ 是正定矩阵，那么
+    \[
+      |A|\leqslant a_{nn}H_{n-1},
+    \]
+    这里 $H_{n-1}$ 是 $A$ 的 $n-1$ 阶顺序主子式；
+  \anssub
+    \item 如果 $A$ 是正定矩阵，那么
+    \[
+      |A|\leqslant a_{11}a_{22}\cdots a_{nn};
+    \]
+  \anssub
+    \item 如果 $T=(t_{ij})_{n\times n}$ 是实可逆矩阵，那么
+    \[
+      |T|^2\leqslant\prod_{i=1}^{n}(t_{i1}^2+t_{i2}^2+\cdots+t_{in}^2).
+    \]
+  \anssub
+  \end{enumerate}
+  \item 证明：实对称矩阵 $A$ 是半正定的充要条件是 $A$ 的一切主子式全大于或等于零．
+  \ansproof
+  \item 已知二次型 $f(x_1,x_2,x_3)=3x_1^2+4x_2^2+3x_3^2+2x_1x_3$．证明：对于任意非零实向量 $v=(a,b,c)$，$\dfrac{f(v)}{v^{\mathrm{T}}v}$ 的最小值为 $2$．
+  \ansproof
+  \item 设 $M$ 是 $n$ 阶方阵，$(i,j)$ 元素是 $i$ 和 $j$ 的最大公因数，其中 $1\leqslant i,j\leqslant n$．证明：矩阵 $M$ 是正定矩阵．
+  \ansproof
+  \item 设 $n$ 为正整数，$A$ 为 $n$ 阶半正定实对称矩阵．证明：对任意的 $n$ 维实列向量 $\alpha,\beta$，都有
+  \[
+    (\alpha^{\mathrm{T}}A\beta)^2\leqslant(\alpha^{\mathrm{T}}A\alpha)(\beta^{\mathrm{T}}A\beta).
+  \]
+  \ansproof
+  \item 设 $A$ 为实对称正定矩阵．证明：必存在唯一主对角线上元素都是正数的下三角形矩阵 $L$，使得 $A=LL^{\mathrm{T}}$．
+  \ansproof
+\end{enumerate}
