@@ -101,7 +101,7 @@
   \anssub
   \end{enumerate}
 
-  \item 证明（替换定理）：设向量组 $\alpha_1,\alpha_2,\cdots,\alpha_r$ 线性无关，且可经向量组 $\beta_1,\beta_2,\cdots,\beta_s$ 线性表出，则 $r\leq s$．且在 $\beta_1,\beta_2,\cdots,\beta_s$ 中存在 $r$ 个向量，不妨设就是 $\beta_1,\beta_2,\cdots,\beta_r$，在用 $\alpha_1,\alpha_2,\cdots,\alpha_r$ 替代它们后所得向量组 $\alpha_1,\alpha_2,\cdots,\alpha_r,\beta_{r+1},\cdots,\beta_s$ 与 $\beta_1,\beta_2,\cdots,\beta_s$ 等价．
+  \item 证明（替换定理）：设向量组 $\alpha_1,\allowbreak \alpha_2,\allowbreak \cdots,\allowbreak \alpha_r$ 线性无关，且可经向量组 $\beta_1,\allowbreak \beta_2,\allowbreak \cdots,\allowbreak \beta_s$ 线性表出，则 $r\leq s$．且在 $\beta_1,\allowbreak \beta_2,\allowbreak \cdots,\allowbreak \beta_s$ 中存在 $r$ 个向量，不妨设就是 $\beta_1,\allowbreak \beta_2,\allowbreak \cdots,\allowbreak \beta_r$，在用 $\alpha_1,\allowbreak \alpha_2,\allowbreak \cdots,\allowbreak \alpha_r$ 替代它们后所得向量组 $\alpha_1,\allowbreak \alpha_2,\allowbreak \cdots,\allowbreak \alpha_r,\allowbreak \beta_{r+1},\allowbreak \cdots,\allowbreak \beta_s$ 与 $\beta_1,\allowbreak \beta_2,\allowbreak \cdots,\allowbreak \beta_s$ 等价．
 
   \ansproof
   \item 设 $a_1,a_2,\cdots,a_n$ 是 $n$ 个互不相同的整数．证明：
@@ -231,13 +231,11 @@
   \item 设整系数多项式 $f(x)=a_nx^n+a_{n-1}x^{n-1}+\cdots+a_0$，它没有有理根．又有素数 $p$ 满足
   \begin{enumerate}
     \item $p\nmid a_n$；
-  \anssub
     \item $p\mid a_{n-2},\cdots,p\mid a_0$；
-  \anssub
     \item $p^2\nmid a_0$．
-  \anssub
   \end{enumerate}
   证明：$f(x)$ 在 $\mathbb{Q}[x]$ 中不可约．
+  \ansproof
 
   \item
   \begin{enumerate}
@@ -252,11 +250,10 @@
   \item $P$ 是一个数域，$N$ 是 $P[x]$ 中的一个子集，满足
   \begin{enumerate}
     \item $f(x),g(x)\in N$，则 $f(x)+g(x)\in N$；
-  \anssub
     \item 对 $f(x)\in N$ 及任何 $q(x)\in P[x]$，有 $q(x)f(x)\in N$．
-  \anssub
   \end{enumerate}
   证明：$N$ 中有 $d(x)$，满足 $N=\{d(x)q(x)\mid q(x)\in P[x]\}$．
+  \ansproof
 
   \item $n$ 为正整数，$f(x)\in\mathbb{Q}[x]$，$\partial(f(x))=n$．证明：有不全为零的有理数 $a_0,a_1,\cdots,a_n$，使
   \[
@@ -280,14 +277,13 @@
   \[
     T^{-1}AT=
     \begin{pmatrix}
-      0 & & & & & \\
-       & 0 & & & & *\\
-       & & \ddots & & & \\
-       & * & & & & \\
-       & & & & 0 &
+      0 & * & \cdots & *\\
+      * & 0 & \cdots & *\\
+      \vdots & \vdots & \ddots & \vdots\\
+      * & * & \cdots & 0
     \end{pmatrix}.
   \]
-  % TODO: 原书矩阵为示意图，星号与点的位置据扫描尽量还原
+  % 原书为主对角线全零的方阵示意，星号表示其余位置的任意元素．
 
   \ansproof
   \item 设 $A\in P^{n\times n}$，$\operatorname{tr}A=0$．证明：有 $X,Y\in P^{n\times n}$，使 $XY-YX=A$．

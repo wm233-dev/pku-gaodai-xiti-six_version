@@ -49,7 +49,7 @@
     \item $f(x)=x^4-x^3-4x^2+4x+1$，$g(x)=x^2-x-1$．
   \anssub
   \end{enumerate}
-  \item 设 $f(x)=x^3+(1+t)x^2+2x+2u$，$g(x)=x^3+tx^2+u$ 的最大公因式是一个二次多项式，求 $t,u$ 的值．
+  \item 设 $f(x)=x^3+(1+t)x^2+2x+2u$，$g(x)=x^3+tx+u$ 的最大公因式是一个二次多项式，求 $t,u$ 的值．
   \anscompute
   \item 证明：如果 $d(x)\mid f(x)$，$d(x)\mid g(x)$，且 $d(x)$ 为 $f(x)$ 与 $g(x)$ 的一个组合，那么 $d(x)$ 是 $f(x)$ 与 $g(x)$ 的一个最大公因式．
   \ansproof
@@ -100,7 +100,7 @@
   \anscompute
   \item 证明：$1+x+\dfrac{x^2}{2!}+\cdots+\dfrac{x^n}{n!}$ 不能有重根．
   \ansproof
-  \item 如果 $a$ 是 $f^{(m)}(x)$ 的一个 $k$ 重根，证明：$a$ 是
+  \item 如果 $a$ 是 $f'''(x)$ 的一个 $k$ 重根，证明：$a$ 是
   \[
     g(x)=\frac{x-a}{2}\left[f'(x)+f'(a)\right]-f(x)+f(a)
   \]
@@ -156,7 +156,8 @@
     \item $(x_1+x_2+x_1x_2)(x_2+x_3+x_2x_3)(x_1+x_3+x_1x_3)$．
   \anssub
   \end{enumerate}
-  \item 用初等对称多项式表出下列 $n$ 元对称多项式：
+  \item 用初等对称多项式表出下列 $n$ 元对称多项式：\par
+  （$\sum ax_1^{k_1}x_2^{k_2}\cdots x_n^{k_n}$ 表示所有由 $ax_1^{k_1}x_2^{k_2}\cdots x_n^{k_n}$ 经过对换得到的项的和．）
   \begin{enumerate}
     \item $\sum x_1^4$；
   \anssub
@@ -167,7 +168,6 @@
     \item $\sum x_1^2x_2^2x_3x_4$．
   \anssub
   \end{enumerate}
-  （$\sum ax_1^{k_1}x_2^{k_2}\cdots x_n^{k_n}$ 表示所有由 $ax_1^{k_1}x_2^{k_2}\cdots x_n^{k_n}$ 经过对换得到的项的和．）
   \item 设 $\alpha_1,\alpha_2,\alpha_3$ 是方程 $5x^3-6x^2+7x-8=0$ 的三个根，计算
   \[
     (\alpha_1^2+\alpha_1\alpha_2+\alpha_2^2)(\alpha_2^2+\alpha_2\alpha_3+\alpha_3^2)(\alpha_1^2+\alpha_1\alpha_3+\alpha_3^2).
@@ -199,7 +199,9 @@
   \ansproof
   \item 证明：如果 $f(x)$ 与 $g(x)$ 互素，那么 $f(x^m)$ 与 $g(x^m)$（$m\geq 1$）也互素．
   \ansproof
-  \item 证明：如果 $f_1(x),\allowbreak f_2(x),\allowbreak\cdots,f_{s-1}(x)$ 的最大公因式存在，那么 $f_1(x),\allowbreak f_2(x),\allowbreak\cdots,f_{s-1}(x),\allowbreak f_s(x)$ 的最大公因式也存在，且当 $f_1(x),\allowbreak f_2(x),\allowbreak\cdots,f_s(x)$ 全不为零时有
+  \item \begin{minipage}[t]{\linewidth}
+  证明：如果 $f_1(x),\allowbreak f_2(x),\allowbreak \cdots,\allowbreak f_{s-1}(x)$ 的最大公因式存在，\\
+  那么 $f_1(x),\allowbreak f_2(x),\allowbreak \cdots,\allowbreak f_{s-1}(x),\allowbreak f_s(x)$ 的最大公因式也存在，且当 $f_1(x),\allowbreak f_2(x),\allowbreak \cdots,\allowbreak f_s(x)$ 全不为零时有
   \[
     (f_1(x),f_2(x),\cdots,f_{s-1}(x),f_s(x))=((f_1(x),f_2(x),\cdots,f_{s-1}(x)),f_s(x)).
   \]
@@ -207,18 +209,19 @@
   \[
     u_1(x)f_1(x)+u_2(x)f_2(x)+\cdots+u_s(x)f_s(x)=(f_1(x),f_2(x),\cdots,f_s(x)).
   \]
+  \end{minipage}
   \ansproof
   \item 多项式 $m(x)$ 称为多项式 $f(x),g(x)$ 的一个最小公倍式，如果
   \begin{enumerate}
     \item $f(x)\mid m(x)$，$g(x)\mid m(x)$；
-  \anssub
     \item $f(x),g(x)$ 的任意一个公倍式都是 $m(x)$ 的倍式．
-  \anssub
   \end{enumerate}
   我们以 $[f(x),g(x)]$ 表示首项系数是 $1$ 的那个最小公倍式．证明：如果 $f(x),g(x)$ 的首项系数都是 $1$，那么
   \[
     [f(x),g(x)]=\frac{f(x)g(x)}{(f(x),g(x))}.
   \]
+  \ansproof
+
   \item 证明定理 $5$ 的逆：设 $p(x)$ 是次数大于零的多项式，如果对于任何多项式 $f(x),g(x)$，由 $p(x)\mid f(x)g(x)$ 可以推出 $p(x)\mid f(x)$ 或者 $p(x)\mid g(x)$，那么 $p(x)$ 是不可约多项式．
   \ansproof
   \item 证明：次数大于 $0$ 且首项系数为 $1$ 的多项式 $f(x)$ 是一个不可约多项式的方幂的充要条件是，对任意的多项式 $g(x)$ 必有 $(f(x),g(x))=1$，或者对某一正整数 $m$，$f(x)\mid g^m(x)$．

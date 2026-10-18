@@ -7,7 +7,8 @@
 \linespread{1.15}
 
 \setlist[enumerate,1]{label=\arabic*.,leftmargin=2.4em,itemsep=0.45em,topsep=0.5em,parsep=0.2em}
-\setlist[enumerate,2]{label=\arabic*),leftmargin=2.2em,itemsep=0.12em,topsep=0.15em,parsep=0.1em}
+% 子题列表与共同题干保持同页，避免题干单独留在上一页末尾．
+\setlist[enumerate,2]{label=\arabic*),leftmargin=2.2em,itemsep=0.12em,topsep=0.15em,parsep=0.1em,beginpenalty=10000}
 \setlist[enumerate,3]{label=\arabic*),leftmargin=2.0em,itemsep=0.1em,topsep=0.1em,parsep=0.1em}
 
 % —— 答题空位长度（可自行调整）——
